@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
               name='userName'
               required
               placeholder='Introduce your name'
-              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular'
+              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-300 hover:border-1 hover:border-[#27272a]'
               value={formData.userName}
               onChange={handleChange}
             />
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
               name='userEmail'
               required
               placeholder='Introduce your email'
-              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular'
+              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-300 hover:border-1 hover:border-[#27272a]'
               value={formData.userEmail}
               onChange={handleChange}
             />
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
             name='userMessage'
             required
             placeholder='Introduce your message'
-            className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular h-44 resize-none mb-8'
+            className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular h-44 resize-none mb-8 focus:outline-none focus:border-[#27272a] transition-colors duration-300 hover:border-1 hover:border-[#27272a]'
             value={formData.userMessage}
             onChange={handleChange}
           />
