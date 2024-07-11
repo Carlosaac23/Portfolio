@@ -13,18 +13,15 @@ function ProjectsPage() {
 
   useEffect(() => {
     fetch('https://api.github.com/users/Carlosaac23/repos')
-      .then((response) => response.json())
-      .then((data) => setProjects(data));
+      .then(response => response.json())
+      .then(data => setProjects(data));
   }, []);
 
   return (
     <>
       {projects.length >= 1 ? (
         <section className='flex flex-col gap-10 geist-regular text-white'>
-          <p className='text-left text-[#d4d4d4]'>
-            These are the personal projects I have developed throughout my
-            programming career.
-          </p>
+          <p className='text-left text-[#d4d4d4]'>These are my projects. Feel free to review them.</p>
           <div>
             <div className='grid md:grid-cols-[1fr_1fr] gap-5 text-[14px]'>
               {projects.map((project: project) => (
@@ -32,9 +29,7 @@ function ProjectsPage() {
                   <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl min-h-[100px] transform transition-transform duration-300 hover:scale-95'>
                     <div className='text-left'>
                       <p className='text-white geist-bold'>{project.name}</p>
-                      <p className='text-[#A3A3A3] text-sm'>
-                        {project.description}
-                      </p>
+                      <p className='text-[#A3A3A3] text-sm'>{project.description}</p>
                     </div>
                     <FaArrowUpRightFromSquare />
                   </div>

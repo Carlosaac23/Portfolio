@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import WorkPage from './pages/WorkPage';
-import Contact from './pages/Contact';
+import ContactPage from './pages/ContactPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './scrollbar.css';
@@ -18,7 +18,7 @@ function App() {
             <Route path='/' element={<HomePage />} />
             <Route path='/projects' element={<ProjectsPage />} />
             <Route path='/work' element={<WorkPage />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />

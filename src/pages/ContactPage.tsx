@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className='contact section' id='contact'>
-      <h2 className='text-2xl geist-bold text-[#d4d4d4] mb-10'>Contact me</h2>
+      <h2 className='text-2xl geist-bold text-[#d4d4d4] mb-10'>Contact Me</h2>
       <div className='contact-container container grid'>
         <form action='' className='contact-form grid gap-4' id='contacto-form' onSubmit={handleSubmit}>
           <div className='contact-group grid gap-4'>
