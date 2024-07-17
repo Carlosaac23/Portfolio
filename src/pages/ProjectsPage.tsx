@@ -26,7 +26,7 @@ function ProjectsPage() {
             <div className='grid md:grid-cols-[1fr_1fr] gap-5 text-[14px]'>
               {projects.map((project: project) => (
                 <a key={project.name} href={project.html_url} target='_blank'>
-                  <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl min-h-[100px] transform transition-transform duration-300 hover:scale-95'>
+                  <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl min-h-[100px] transform transition-transform duration-500 hover:scale-95'>
                     <div className='text-left'>
                       <p className='text-white geist-bold'>{project.name}</p>
                       <p className='text-[#A3A3A3] text-sm'>{project.description}</p>

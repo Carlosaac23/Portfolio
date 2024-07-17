@@ -24,7 +24,7 @@ function HomePage() {
 
       <div className='grid md:grid-cols-[1fr_1fr_1fr] gap-5 text-[14px]'>
         <a href='https://www.instagram.com/elrincondeldev/' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-300 hover:scale-95'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
             <img src='/images/instagram.png' alt='' />
             <div className='text-left'>
               <p>@elrincondeldev</p>
@@ -34,7 +34,7 @@ function HomePage() {
           </div>
         </a>
         <a href='https://www.tiktok.com/@elrincondeldev' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-300 hover:scale-95'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
             <img src='/images/tiktok.png' alt='' />
             <div className='text-left'>
               <p>@elrincondeldev</p>
@@ -44,7 +44,7 @@ function HomePage() {
           </div>
         </a>
         <a href='https://www.youtube.com/channel/UCWn_0MmgojB711LFX-jaCDQ' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-300 hover:scale-95'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
             <img src='/images/youtube.png' alt='' />
             <div className='text-left'>
               <p>@elrincondeldev</p>
