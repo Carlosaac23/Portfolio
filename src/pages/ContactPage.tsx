@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
       .sendForm('service_vzkaygi', 'template_f3xf32h', '#contacto-form', 'vWS_GMkpEirykpGRp')
       .then(() => {
         // Show sent message
-        setMessage('Mensaje enviado exitosamente ✅');
+        setMessage('Mensaje enviado exitosamente');
 
         // Delete message after 5s
         setTimeout(() => {
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
       })
       .catch(() => {
         // Show unsent message
-        setMessage('Mensaje no enviado (Error del servicio) ❌');
+        setMessage('Mensaje no enviado (Error del servicio)');
       });
   };
 
