@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
       .sendForm('service_vzkaygi', 'template_f3xf32h', '#contacto-form', 'vWS_GMkpEirykpGRp')
       .then(() => {
         // Show sent message
-        setMessage('Mensaje enviado exitosamente');
+        setMessage('Message sent successfully');
 
         // Delete message after 5s
         setTimeout(() => {
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
       })
       .catch(() => {
         // Show unsent message
-        setMessage('Mensaje no enviado (Error del servicio)');
+        setMessage('Message not sent');
       });
   };
 
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
               name='userName'
               required
               placeholder='Introduce your name'
-              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-500 hover:border-1 hover:border-[#27272a]'
+              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-700 hover:border-1 hover:border-[#27272a]'
               value={formData.userName}
               onChange={handleChange}
             />
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
               name='userEmail'
               required
               placeholder='Introduce your email'
-              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-500 hover:border-1 hover:border-[#27272a]'
+              className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular focus:outline-none focus:border-[#27272a] transition-colors duration-700 hover:border-1 hover:border-[#27272a]'
               value={formData.userEmail}
               onChange={handleChange}
             />
@@ -71,16 +71,16 @@ const Contact: React.FC = () => {
             name='userMessage'
             required
             placeholder='Introduce your message'
-            className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular h-44 resize-none mb-8 focus:outline-none focus:border-[#27272a] transition-colors duration-500 hover:border-1 hover:border-[#27272a]'
+            className='contact-input p-4 rounded-lg border-2 border-[#0e0e0e] bg-[#0A0A0A] placeholder-[#A3A3A3] text-white geist-regular h-44 resize-none mb-8 focus:outline-none focus:border-[#27272a] transition-colors duration-700 hover:border-1 hover:border-[#27272a]'
             value={formData.userMessage}
             onChange={handleChange}
           />
-          <p className='contact-message absolute self-center bottom-20 text-sm text-white geist-bold' id='contact-message'>
+          <p className='contact-message absolute self-center w-max bottom-20 text-lg text-[#d4d4d4] geist-regular' id='contact-message'>
             {message}
           </p>
           <button
             type='submit'
-            className='button contact-button border-2 border-[#0e0e0e] bg-[#0A0A0A] transitions-colors duration-500 hover:bg-[#121212] text-[#A3A3A3] geist-bold p-5 rounded-lg cursor-pointer self-center'
+            className='button contact-button border-2 border-[#0e0e0e] bg-[#0A0A0A] transitions-colors duration-700 hover:bg-[#121212] text-[#A3A3A3] geist-bold p-5 rounded-lg cursor-pointer self-center'
           >
             Send Message
           </button>
