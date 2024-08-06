@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className='w-full text-center py-5 text-cwhite text-white font-bold'>
+    <footer className='w-full text-center py-5 text-[#f4f4f4] geistMono-bold'>
       <p>
         &#169; Copyright{' '}
         <a className='font-bold' href='https://www.instagram.com/carlosaac23/'>

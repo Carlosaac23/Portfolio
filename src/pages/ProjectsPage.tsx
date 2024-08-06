@@ -20,16 +20,16 @@ function ProjectsPage() {
   return (
     <>
       {projects.length >= 1 ? (
-        <section className='flex flex-col gap-10 geist-regular text-white'>
-          <p className='text-left text-[#d4d4d4]'>These are my projects. Feel free to review them.</p>
+        <section className='flex flex-col gap-10 geistMono-regular text-white'>
+          <p className='text-left text-[#f4f4f4]'>These are my projects. Feel free to review them.🤙🏻</p>
           <div>
             <div className='grid md:grid-cols-[1fr_1fr] gap-5 text-[14px]'>
               {projects.map((project: project) => (
                 <a key={project.name} href={project.html_url} target='_blank'>
-                  <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl min-h-[100px] transform transition-transform duration-500 hover:scale-95'>
+                  <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] min-h-[100px] transition-all duration-500'>
                     <div className='text-left'>
-                      <p className='text-white geist-bold'>{project.name}</p>
-                      <p className='text-[#A3A3A3] text-sm'>{project.description}</p>
+                      <p className='text-white geistMono-bold'>{project.name}</p>
+                      <p className='text-[#a3a3a3] text-sm geistMono-regular'>{project.description}</p>
                     </div>
                     <FaArrowUpRightFromSquare />
                   </div>

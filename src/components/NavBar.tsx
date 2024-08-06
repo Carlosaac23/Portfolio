@@ -9,8 +9,8 @@ function NavBar() {
   ];
 
   return (
-    <ul className='flex text-white geist-regular gap-5 mb-16'>
-      {navLinks.map((navLink) => (
+    <ul className='flex text-[#fafafa] geistMono-regular gap-5 mb-16'>
+      {navLinks.map(navLink => (
         <li key={navLink.path}>
           <Link to={navLink.path}>{navLink.title}</Link>
         </li>

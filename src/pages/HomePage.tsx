@@ -2,11 +2,11 @@ import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 function HomePage() {
   return (
-    <div className='flex flex-col gap-10 geist-regular text-white'>
-      <p className='text-left text-2xl'>Hi, I am Carlos</p>
-      <p className='text-left text-[#d4d4d4]'>
+    <div className='flex flex-col gap-10 geistMono-regular text-white'>
+      <p className='text-left text-2xl'>Hi, I'm Carlos 👋🏻</p>
+      <p className='text-left text-[#fafafa]'>
         I am a front-end developer who loves the tech industry. I am currently learning and creating projects to enhance my skills and enter the programming
-        world. I am excited about the opportunity to work with you and continue to explore this vast and beautiful world.
+        world. I am excited about the opportunity to work with you and continue to explore this vast and beautiful world.💪🏻
       </p>
       <div className='flex flex-col gap-5'>
         <div className='flex w-[100%] justify-between gap-5'>
@@ -18,37 +18,34 @@ function HomePage() {
           <img src='/images/vertical-1.png' alt='' className='w-[35%] rounde-md' />
         </div>
       </div>
-      <p className='text-left text-[#d4d4d4]'>
-        You can get to know me better by connecting with me on my preferred social network. Additionally, you can view my professional profiles here.
+      <p className='text-left text-[#f4f4f4]'>
+        You can get to know me better by connecting with me on my preferred social network. Additionally, you can view my professional profiles here.👇🏻
       </p>
 
       <div className='grid md:grid-cols-[1fr_1fr_1fr] gap-5 text-[14px]'>
-        <a href='https://www.instagram.com/elrincondeldev/' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
-            <img src='/images/instagram.png' alt='' />
+        <a href='https://github.com/Carlosaac23' target='_blank'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500'>
+            <img src='/public/images/github.svg' alt='GitHub Logo' className='w-7 h-7' />
             <div className='text-left'>
-              <p>@elrincondeldev</p>
-              <p>125,000 followers</p>
+              <p>@Carlosaac23</p>
             </div>
             <FaArrowUpRightFromSquare />
           </div>
         </a>
-        <a href='https://www.tiktok.com/@elrincondeldev' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
-            <img src='/images/tiktok.png' alt='' />
+        <a href='https://x.com/Carlosaac23' target='_blank'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500'>
+            <img src='/public/images/x.svg' alt='X Logo' className='w-7 h-7' />
             <div className='text-left'>
-              <p>@elrincondeldev</p>
-              <p>159,000 followers</p>
+              <p>@Carlosaac23</p>
             </div>
             <FaArrowUpRightFromSquare />
           </div>
         </a>
-        <a href='https://www.youtube.com/channel/UCWn_0MmgojB711LFX-jaCDQ' target='_blank'>
-          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border-2 border-[#0e0e0e] rounded-xl transform transition-transform duration-500 hover:scale-95'>
-            <img src='/images/youtube.png' alt='' />
+        <a href='https://www.linkedin.com/in/carlos-acosta-7aa448263/' target='_blank'>
+          <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500 '>
+            <img src='/public/images/linkedin.svg' alt='Linkeding Logo' className='w-7 h-7' />
             <div className='text-left'>
-              <p>@elrincondeldev</p>
-              <p>24,000 subscribers</p>
+              <p>Carlos Acosta</p>
             </div>
 
             <FaArrowUpRightFromSquare />

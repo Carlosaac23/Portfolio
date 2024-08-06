@@ -6,23 +6,23 @@
 }
 
 html {
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 @font-face {
-  font-family: 'Geist-Bold';
-  src: url('/Geist-Bold.otf');
+  font-family: 'GeistMono-Bold';
+  src: url('../public/GeistMono-Bold.ttf');
 }
 
-.geist-bold {
-  font-family: Geist-Bold;
+.geistMono-bold {
+  font-family: GeistMono-Bold;
 }
 
 @font-face {
-  font-family: 'Geist-Regular';
-  src: url('/Geist-Regular.otf');
+  font-family: 'GeistMono-Regular';
+  src: url('../public/GeistMono-Regular.ttf');
 }
 
-.geist-regular {
-  font-family: Geist-Regular;
+.geistMono-regular {
+  font-family: GeistMono-Regular;
 }
