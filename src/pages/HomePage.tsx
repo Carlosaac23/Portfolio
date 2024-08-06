@@ -25,7 +25,7 @@ function HomePage() {
       <div className='grid md:grid-cols-[1fr_1fr_1fr] gap-5 text-[14px]'>
         <a href='https://github.com/Carlosaac23' target='_blank'>
           <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500'>
-            <img src='/public/images/github.svg' alt='GitHub Logo' className='w-7 h-7' />
+            <img src='/images/github.svg' alt='GitHub Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p>@Carlosaac23</p>
             </div>
@@ -34,7 +34,7 @@ function HomePage() {
         </a>
         <a href='https://x.com/Carlosaac23' target='_blank'>
           <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500'>
-            <img src='/public/images/x.svg' alt='X Logo' className='w-7 h-7' />
+            <img src='/images/x.svg' alt='X Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p>@Carlosaac23</p>
             </div>
@@ -43,7 +43,7 @@ function HomePage() {
         </a>
         <a href='https://www.linkedin.com/in/carlos-acosta-7aa448263/' target='_blank'>
           <div className='flex items-center p-3 justify-between bg-[#0A0A0A] border border-[#262626] rounded-lg hover:bg-[#171717] transition-all duration-500 '>
-            <img src='/public/images/linkedin.svg' alt='Linkeding Logo' className='w-7 h-7' />
+            <img src='/images/linkedin.svg' alt='Linkeding Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p>Carlos Acosta</p>
             </div>
