@@ -13,5 +13,7 @@
   "inputEmail": "Introduce your email",
   "inputMsg": "Introduce your message",
   "button": "Send",
+  "messageSent": "Message sent successfully!",
+  "messageNotSent": "Message not sent. Please try again.",
   "copyright": "Copyright"
 }

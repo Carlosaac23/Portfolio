@@ -6,12 +6,14 @@ import WorkPage from './pages/WorkPage';
 import ContactPage from './pages/ContactPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import { Toaster } from 'sonner';
 import './scrollbar.css';
 
 function App() {
   return (
     <>
       <Router>
+        <Toaster position='bottom-right' theme='dark' />
         <main className='min-h-screen'>
           <NavBar />
           <Routes>

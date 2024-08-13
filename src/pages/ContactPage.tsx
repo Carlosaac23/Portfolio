@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'sonner';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -20,17 +21,16 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // serviceID - templateID - #form - publicKey
     emailjs
       .sendForm('service_vzkaygi', 'template_f3xf32h', '#contacto-form', 'vWS_GMkpEirykpGRp')
       .then(() => {
         // Show sent message
-        setMessage('Message sent successfully');
+        toast.success(t('messageSent'));
 
-        // Delete message after 5s
+        // Delete message after 4s
         setTimeout(() => {
           setMessage('');
-        }, 5000);
+        }, 4000);
 
         // Delete fields
         setFormData({
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
       })
       .catch(() => {
         // Show unsent message
-        setMessage('Message not sent');
+        toast.error(t('messageNotSent'));
       });
   };
 
