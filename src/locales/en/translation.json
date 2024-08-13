@@ -1,0 +1,17 @@
+{
+  "home": "Home",
+  "projectsNav": "Projects",
+  "work": "Work",
+  "contact": "Contact",
+  "presentation": "Hi, I'm Carlos",
+  "description": "I am a front-end developer who loves the tech industry. I am currently learning and creating projects to enhance my skills and enter the programming world. I am excited about the opportunity to work with you and continue to explore this vast and beautiful world.",
+  "social": "You can get to know me better by connecting with me on my preferred social network. Additionally, you can view my professional profiles here.👇🏻",
+  "projects": "These are my projects. Feel free to check them.",
+  "workDescription": "I'm currently studying 'Software Analysis and Development' while improving my programming skills. I don't have any professional experience yet but I have 6 months of experience building personal projects with HTML, CSS, JS, TS, React, Tailwind and NextJS which you can see on the previous page.",
+  "contactTitle": "Contact Me",
+  "inputName": "Introduce your name",
+  "inputEmail": "Introduce your email",
+  "inputMsg": "Introduce your message",
+  "button": "Send",
+  "copyright": "Copyright"
+}

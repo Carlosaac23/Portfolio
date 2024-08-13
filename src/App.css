@@ -1,0 +1,28 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+html {
+  background-color: #000;
+}
+
+@font-face {
+  font-family: 'GeistMono-Bold';
+  src: url('../public/GeistMono-Bold.ttf');
+}
+
+.geistMono-bold {
+  font-family: GeistMono-Bold;
+}
+
+@font-face {
+  font-family: 'GeistMono-Regular';
+  src: url('../public/GeistMono-Regular.ttf');
+}
+
+.geistMono-regular {
+  font-family: GeistMono-Regular;
+}
