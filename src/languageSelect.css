@@ -1,7 +1,7 @@
 .language-select {
   background: #0a0a0a;
   color: transparent;
-  border: 1px solid #262626;
+  border: 1px solid #27272a;
   border-radius: 7px;
   width: 35px;
   height: 35px;
@@ -18,7 +18,7 @@
 
 .language-select:hover {
   cursor: pointer;
-  border-color: #767676;
+  border-color: #52525b;
 }
 
 .language-select:focus {
