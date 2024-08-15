@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className='w-full text-center py-5 text-[#fafafa] geistMono-bold'>
       <p>
-        &#169; {t('copyright')} <a className='font-bold'>Carlos Acosta</a>
+        &#169; {t('copyright')} <a>Carlos Acosta</a>
       </p>
     </footer>
   );
