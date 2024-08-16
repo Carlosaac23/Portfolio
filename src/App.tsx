@@ -8,13 +8,12 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Toaster } from 'sonner';
 import './scrollbar.css';
-import './toastFont.css';
 
 function App() {
   return (
     <>
       <Router>
-        <Toaster position='bottom-right' theme='dark' className='toast-font' />
+        <Toaster position='bottom-right' theme='dark' className='geistMono-Regular' />
         <main className='min-h-screen'>
           <NavBar />
           <Routes>

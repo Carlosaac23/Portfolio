@@ -4,7 +4,7 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className='w-full text-center py-5 text-[#fafafa] geistMono-bold'>
+    <footer className='w-full text-center py-5 text-[#fafafa] geistMono-Bold'>
       <p>
         &#169; {t('copyright')} <a>Carlos Acosta</a>
       </p>

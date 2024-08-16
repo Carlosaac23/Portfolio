@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className='contact section' id='contact'>
-      <h2 className='text-2xl geistMono-bold text-[#fafafa] mb-10'>{t('contactTitle')}</h2>
+      <h2 className='text-2xl geistMono-Bold text-[#fafafa] mb-10'>{t('contactTitle')}</h2>
       <div className='contact-container container grid'>
         <form action='' className='contact-form grid gap-4' id='contacto-form' onSubmit={handleSubmit}>
           <div className='contact-group grid gap-4'>
@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
               name='userName'
               required
               placeholder={t('inputName')}
-              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-regular'
+              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
               value={formData.userName}
               onChange={handleChange}
             />
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
               name='userEmail'
               required
               placeholder={t('inputEmail')}
-              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-regular'
+              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
               value={formData.userEmail}
               onChange={handleChange}
             />
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
             name='userMessage'
             required
             placeholder={t('inputMsg')}
-            className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-regular h-44 resize-none mb-8'
+            className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular h-44 resize-none mb-8'
             value={formData.userMessage}
             onChange={handleChange}
           />
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
           </p>
           <button
             type='submit'
-            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300  text-[#fafafa] geistMono-bold p-5 rounded-lg cursor-pointer self-center'
+            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease  text-[#fafafa] geistMono-Bold p-5 rounded-lg cursor-pointer self-center'
           >
             {t('button')}
           </button>

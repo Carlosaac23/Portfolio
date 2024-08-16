@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../languageSelect.css';
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
@@ -10,9 +9,17 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <select value={i18n.language} onChange={handleLanguageChange} className='language-select'>
-      <option value='en'>EN</option>
-      <option value='es'>ES</option>
+    <select
+      className='geistMono-regular bg-[#0a0a0a] text-[#f4f4f4] border border-[#27272a] rounded-md w-[53px] p-1 ml-[15px] hover:border-[#52525b] focus:outline-none transition-all duration-300 ease cursor-pointer '
+      value={i18n.language}
+      onChange={handleLanguageChange}
+    >
+      <option className='text-[#f4f4f4] geistMono-regular' value='en'>
+        EN
+      </option>
+      <option className='text-[#f4f4f4] geistMono-regular' value='es'>
+        ES
+      </option>
     </select>
   );
 };

@@ -14,7 +14,7 @@ html {
   src: url('/GeistMono-Bold.ttf');
 }
 
-.geistMono-bold {
+.geistMono-Bold {
   font-family: GeistMono-Bold;
 }
 
@@ -23,6 +23,6 @@ html {
   src: url('/GeistMono-Regular.ttf');
 }
 
-.geistMono-regular {
+.geistMono-Regular {
   font-family: GeistMono-Regular;
 }
