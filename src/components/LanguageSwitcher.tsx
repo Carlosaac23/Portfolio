@@ -10,7 +10,7 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <select
-      className='geistMono-regular bg-[#0a0a0a] text-[#f4f4f4] border border-[#27272a] rounded-md w-[53px] p-1 ml-[15px] hover:border-[#52525b] focus:outline-none transition-all duration-300 ease cursor-pointer '
+      className='text-[#f4f4f4] geistMono-regular bg-[#0a0a0a] border border-[#27272a] rounded-md w-[53px] p-1 ml-[15px] hover:border-[#52525b] focus:outline-none transition-all duration-300 ease cursor-pointer '
       value={i18n.language}
       onChange={handleLanguageChange}
     >

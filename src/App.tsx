@@ -7,7 +7,6 @@ import ContactPage from './pages/ContactPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Toaster } from 'sonner';
-import './scrollbar.css';
 
 function App() {
   return (
