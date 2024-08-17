@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className='contact section' id='contact'>
-      <h2 className='text-2xl geistMono-Bold text-[#fafafa] mb-10'>{t('contactTitle')}</h2>
+      <h2 className='text-2xl geistMono-Bold text-white mb-10'>{t('contactTitle')}</h2>
       <div className='contact-container container grid'>
         <form action='' className='contact-form grid gap-4' id='contacto-form' onSubmit={handleSubmit}>
           <div className='contact-group grid gap-4'>
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
           </p>
           <button
             type='submit'
-            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease  text-[#fafafa] geistMono-Bold p-5 rounded-lg cursor-pointer self-center'
+            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease  text-white geistMono-Bold p-5 rounded-lg cursor-pointer self-center'
           >
             {t('button')}
           </button>

@@ -4,7 +4,7 @@ function WorkPage() {
   const { t } = useTranslation();
 
   return (
-    <div className='flex flex-col gap-5 geistMono-Regular text-[#e4e4e7]'>
+    <div className='flex flex-col gap-5 geistMono-Regular text-white'>
       <p className='text-left'>{t('workDescription')} 👈🏻</p>
     </div>
   );
