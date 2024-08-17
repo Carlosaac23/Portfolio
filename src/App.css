@@ -1,3 +1,4 @@
+/* Main */
 #root {
   padding: 2rem;
   text-align: center;
@@ -9,6 +10,7 @@ html {
   background-color: #000;
 }
 
+/* Fonts */
 @font-face {
   font-family: 'GeistMono-Bold';
   src: url('/GeistMono-Bold.ttf');
@@ -27,6 +29,7 @@ html {
   font-family: GeistMono-Regular;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
