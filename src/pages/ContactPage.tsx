@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/src/api/sendEmail.tsx', {
+      const response = await fetch('/api/sendEmail.ts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
         body: JSON.stringify({
           from: `${formData.userName} <${formData.userEmail}>`,
           to: ['carlosaac23@hotmail.com'],
-          subject: 'Nuevo mensaje de contacto',
+          subject: `Hi Carlos, it's me ${formData.userName} `,
           html: `<p>${formData.userMessage}</p>`,
         }),
       });
@@ -41,12 +41,9 @@ const Contact: React.FC = () => {
           userMessage: '',
         });
       } else {
-        const errorData = await response.json();
-        console.error('Error response:', errorData);
         throw new Error('Failed to send message');
       }
     } catch (error) {
-      console.error('Error:', error);
       toast.error(t('messageNotSent'));
     }
   };

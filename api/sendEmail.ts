@@ -8,20 +8,24 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { from, to, subject, html } = req.body;
 
     try {
-      const { data, error } = await resend.emails.send({
+      const response = await resend.emails.send({
         from,
         to,
         subject,
         html,
       });
 
-      if (error) {
-        return res.status(400).json({ error });
+      if (response.error) {
+        return res.status(400).json({ error: response.error });
       }
 
-      res.status(200).json({ data });
+      res.status(200).json({ message: 'Email sent successfully' });
     } catch (err) {
-      res.status(500).json({ error: (err as Error).message });
+      if (err instanceof Error) {
+        res.status(500).json({ error: err.message });
+      } else {
+        res.status(500).json({ error: 'An unexpected error occurred' });
+      }
     }
   } else {
     res.status(405).json({ error: 'Method not allowed' });
