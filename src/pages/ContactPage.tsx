@@ -1,5 +1,4 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 
@@ -11,38 +10,45 @@ const Contact: React.FC = () => {
     userEmail: '',
     userMessage: '',
   });
-  const [message, setMessage] = useState('');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_vzkaygi', 'template_f3xf32h', '#contacto-form', 'vWS_GMkpEirykpGRp')
-      .then(() => {
-        // Show sent message
+    try {
+      const response = await fetch('/src/api/sendEmail.tsx', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: `${formData.userName} <${formData.userEmail}>`,
+          to: ['carlosaac23@hotmail.com'],
+          subject: 'Nuevo mensaje de contacto',
+          html: `<p>${formData.userMessage}</p>`,
+        }),
+      });
+
+      if (response.ok) {
         toast.success(t('messageSent'));
-
-        // Delete message after 4s
-        setTimeout(() => {
-          setMessage('');
-        }, 4000);
-
-        // Delete fields
         setFormData({
           userName: '',
           userEmail: '',
           userMessage: '',
         });
-      })
-      .catch(() => {
-        // Show unsent message
-        toast.error(t('messageNotSent'));
-      });
+      } else {
+        const errorData = await response.json();
+        console.error('Error response:', errorData);
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error(t('messageNotSent'));
+    }
   };
 
   return (
@@ -78,9 +84,7 @@ const Contact: React.FC = () => {
             value={formData.userMessage}
             onChange={handleChange}
           />
-          <p className='contact-message absolute self-center w-max bottom-20 text-lg text-[#d4d4d4] geist-regular' id='contact-message'>
-            {message}
-          </p>
+
           <button
             type='submit'
             className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease  text-white geistMono-Bold p-5 rounded-lg cursor-pointer self-center'
