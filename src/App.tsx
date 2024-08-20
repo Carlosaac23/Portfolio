@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Router>
-        <Toaster position='bottom-right' theme='dark' className='geistMono-Regular' />
+        <Toaster position='bottom-right' theme='dark' className='geistMono-Regular' richColors />
         <main className='min-h-screen'>
           <NavBar />
           <Routes>
