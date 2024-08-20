@@ -10,7 +10,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
       const response = await resend.emails.send({
         from,
-        replyTo: replyTo,
+        replyTo,
         to,
         subject,
         html,
