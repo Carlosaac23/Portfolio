@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -20,21 +21,20 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/sendEmail.ts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const response = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          to_name: 'Carlos',
+          from_name: formData.userName,
+          from_email: formData.userEmail,
+          to_email: 'carlosaac232001@gmail.com',
+          message: formData.userMessage,
         },
-        body: JSON.stringify({
-          from: `Contact form <no-reply@onresend.com>`,
-          'reply-to': 'carlosaac23@hotmail.com',
-          to: ['carlosaac23@hotmail.com'],
-          subject: `Hi Carlos, it's me ${formData.userName} `,
-          html: `<p>${formData.userMessage}</p>`,
-        }),
-      });
+        import.meta.env.VITE_EMAILJS_USER_ID
+      );
 
-      if (response.ok) {
+      if (response.status === 200) {
         toast.success(t('messageSent'));
         setFormData({
           userName: '',
