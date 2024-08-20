@@ -20,6 +20,7 @@
   "inputMsg": "Introduce tu mensaje",
   "inputMsgHover": "Introduce tu mensaje",
   "button": "Enviar",
+  "sendingPromise": "Enviando...",
   "allInputsRequired": "Debes rellenar el formulario",
   "inputNameRequired": "Debes agregar un nombre",
   "inputLastNameRequired": "Debes agregar un apellido",

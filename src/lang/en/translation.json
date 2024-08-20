@@ -20,6 +20,7 @@
   "inputMsg": "Introduce your message",
   "inputMsgHover": "Introduce your message",
   "button": "Send",
+  "sendingPromise": "Sending...",
   "allInputsRequired": "You must fill the form",
   "inputNameRequired": "You must add a name",
   "inputLastNameRequired": "You must add a last name",
