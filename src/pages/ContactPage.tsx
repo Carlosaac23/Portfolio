@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 import emailjs from 'emailjs-com';
 
+interface EmailResponse {
+  name: string;
+}
+
 const Contact: React.FC = () => {
   const { t } = useTranslation();
 
@@ -46,34 +50,44 @@ const Contact: React.FC = () => {
       return;
     }
 
-    try {
-      const response = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          to_name: 'Carlos',
-          from_name: `${formData.userName} ${formData.userLastName}`,
-          from_email: formData.userEmail,
-          to_email: 'carlosaac23@hotmail.com',
-          message: formData.userMessage,
-        },
-        import.meta.env.VITE_EMAILJS_USER_ID
-      );
+    const sendEmailPromise = (): Promise<EmailResponse> =>
+      new Promise(async (resolve, reject) => {
+        try {
+          const response = await emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            {
+              to_name: 'Carlos',
+              from_name: `${formData.userName} ${formData.userLastName}`,
+              from_email: formData.userEmail,
+              to_email: 'carlosaac23@hotmail.com',
+              message: formData.userMessage,
+            },
+            import.meta.env.VITE_EMAILJS_USER_ID
+          );
 
-      if (response.status === 200) {
-        toast.success(t('messageSent'));
-        setFormData({
-          userName: '',
-          userLastName: '',
-          userEmail: '',
-          userMessage: '',
-        });
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
-      toast.error(t('messageNotSent'));
-    }
+          if (response.status === 200) {
+            resolve({ name: 'Sonner' });
+          } else {
+            reject(new Error('Failed to send message'));
+          }
+        } catch (error) {
+          reject(error);
+        }
+      });
+
+    toast.promise(sendEmailPromise(), {
+      loading: t('sendingPromise'),
+      success: t('messageSent'),
+      error: t('messageNotSent'),
+    });
+
+    setFormData({
+      userName: '',
+      userLastName: '',
+      userEmail: '',
+      userMessage: '',
+    });
   };
 
   return (
