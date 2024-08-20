@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: `Contact form <no-reply@correo.com>`,
+          from: `Contact form <no-reply@onresend.com>`,
           'reply-to': `${formData.userName} <${formData.userEmail}>`,
           to: ['carlosaac23@hotmail.com'],
           subject: `Hi Carlos, it's me ${formData.userName} `,
