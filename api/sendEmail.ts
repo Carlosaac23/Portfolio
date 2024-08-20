@@ -5,7 +5,7 @@ const resend = new Resend('re_b2oKyVwg_4bCWWLEZ9GZY3SkwELqX6tLo');
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'POST') {
-    const { from, replyTo, to, subject, html } = req.body;
+    const { from, 'reply-to': replyTo, to, subject, html } = req.body;
 
     try {
       const response = await resend.emails.send({
