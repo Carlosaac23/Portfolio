@@ -7,6 +7,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'POST') {
     const { from, to, subject, html } = req.body;
 
+    console.log('Request body:', req.body);
+
     try {
       const response = await resend.emails.send({
         from,
