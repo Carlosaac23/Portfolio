@@ -37,7 +37,7 @@ function ProjectsPage() {
               {projects.map((project: Project) => (
                 <div
                   key={project.name}
-                  className='flex items-center p-3 justify-between bg-[#0a0a0a] border border-[#27272a] rounded-lg hover:border-[#52525b] min-h-[100px] transition-all duration-300 ease'
+                  className='flex items-center p-3 justify-between bg-[#0a0a0a] border border-[#27272a] rounded-md hover:border-[#52525b] min-h-[100px] transition-all duration-300 ease'
                 >
                   <div className='text-left'>
                     <p className='text-white geistMono-Bold'>{project.name}</p>

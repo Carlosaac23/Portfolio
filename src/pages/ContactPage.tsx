@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
               type='text'
               name='userName'
               placeholder={t('inputName')}
-              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
+              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
               value={formData.userName}
               onChange={handleChange}
             />
@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
               type='text'
               name='userLastName'
               placeholder={t('inputLastName')}
-              className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
+              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
               value={formData.userLastName}
               onChange={handleChange}
             />
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
             type='email'
             name='userEmail'
             placeholder={t('inputEmail')}
-            className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
+            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular'
             value={formData.userEmail}
             onChange={handleChange}
           />
@@ -128,13 +128,13 @@ const Contact: React.FC = () => {
             title={t('inputMsgHover')}
             name='userMessage'
             placeholder={t('inputMsg')}
-            className='contact-input p-4 rounded-lg bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular h-44 resize-none mb-8'
+            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transition-all duration-300 ease placeholder-[#a3a3a3] placeholder:text-xs md:placeholder:text-base focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular h-44 resize-none mb-8'
             value={formData.userMessage}
             onChange={handleChange}
           />
           <button
             type='submit'
-            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease text-white geistMono-Bold p-5 rounded-lg cursor-pointer self-center'
+            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease text-white geistMono-Bold p-5 rounded-md cursor-pointer self-center'
           >
             {t('button')}
           </button>

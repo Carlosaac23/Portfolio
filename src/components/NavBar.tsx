@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSelect from './LanguageSelect';
 
 function NavBar() {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ function NavBar() {
           </li>
         ))}
       </ul>
-      <LanguageSwitcher />
+      <LanguageSelect />
     </div>
   );
 }
