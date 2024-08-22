@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
       <h2 className='text-2xl geistMono-Bold text-white mb-10'>{t('contactTitle')}</h2>
       <div className='contact-container container grid'>
         <form action='' className='contact-form grid gap-4' id='contacto-form' onSubmit={handleSubmit}>
-          <div className='contact-group grid grid-cols-2 gap-4'>
+          <div className='contact-group grid grid-cols-2 max-sm:grid-cols-1 gap-4'>
             <input
               title={t('inputNameHover')}
               type='text'

@@ -31,7 +31,7 @@ function ProjectsPage() {
     <>
       {projects.length >= 1 ? (
         <section className='flex flex-col gap-10 geistMono-Regular text-white'>
-          <p className='text-left text-white'>{t('projects')} 🤙🏻</p>
+          <p className='text-left text-[#e4e4e7]'>{t('projects')} 🤙🏻</p>
           <div>
             <div className='grid md:grid-cols-[1fr_1fr] gap-5 text-[14px]'>
               {projects.map((project: Project) => (
