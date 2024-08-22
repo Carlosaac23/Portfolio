@@ -14,7 +14,7 @@ function NavBar() {
 
   return (
     <div className='flex justify-between items-center mb-16'>
-      <ul className='flex text-white geistMono-Regular gap-2 lg:gap-5 text-[14px] sm:text-[16px] lg:text-[17px]'>
+      <ul className='flex text-white text-lg geistMono-Regular gap-4 max-md:text-base max-md:gap-4 max-sm:text-sm max-sm:gap-2'>
         {navLinks.map(navLink => (
           <li key={navLink.path}>
             <Link to={navLink.path}>{navLink.title}</Link>
