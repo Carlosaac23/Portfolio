@@ -54,12 +54,12 @@ const LanguageSelect: React.FC = () => {
         <ChevronDownIcon className='h-4 w-4' />
       </button>
       {isOpen && (
-        <ul className='absolute z-10 right-0 mt-1 w-[56px] bg-[#0a0a0a] border border-[#27272a] rounded-md shadow-lg' role='listbox' onKeyDown={handleKeyDown}>
+        <ul className='absolute z-10 right-0 mt-1 w-[56px] bg-[#0a0a0a] border border-[#5a5a5a] rounded-md shadow-lg' role='listbox' onKeyDown={handleKeyDown}>
           {languages.map(language => (
             <li
               key={language.code}
               className={`px-2 py-1 cursor-pointer flex items-center justify-between text-white geistMono-Regular ${
-                i18n.language === language.code ? 'bg-[#27272a] rounded-[4px]' : 'hover:bg-[#1b1b1b] rounded-[5px] transition-all duration-300 ease'
+                i18n.language === language.code ? 'bg-[#5a5a5a] rounded-[4px]' : 'hover:bg-[#1b1b1b] rounded-[5px] transition-all duration-300 ease'
               }`}
               onClick={() => handleLanguageChange(language.code)}
               role='option'

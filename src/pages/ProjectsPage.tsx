@@ -37,18 +37,30 @@ function ProjectsPage() {
               {projects.map((project: Project) => (
                 <div
                   key={project.name}
-                  className='flex items-center p-3 justify-between bg-[#0a0a0a] border border-[#27272a] rounded-md hover:border-[#52525b] min-h-[100px] transition-all duration-300 ease'
+                  className='flex items-center p-3 justify-between bg-[#0a0a0a] border border-[#27272a] rounded-md hover:border-[#5a5a5a] min-h-[100px] transition-all duration-300 ease'
                 >
                   <div className='text-left'>
                     <p className='text-white geistMono-Bold'>{project.name}</p>
                     <p className='text-[#e5e5e5] text-sm'>{project.description}</p>
                     {project.homepage && (
-                      <a href={project.homepage} target='_blank' rel='noopener noreferrer' className='text-[#a1a1a1] geistMono-Regular hover:underline'>
+                      <a
+                        href={project.homepage}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        aria-label='A link to this project page'
+                        className='text-[#a1a1a1] geistMono-Regular hover:underline'
+                      >
                         {t('website')}
                       </a>
                     )}{' '}
                     -
-                    <a href={project.html_url} target='_blank' rel='noopener noreferrer' className='text-[#a1a1a1] geistMono-Regular hover:underline ml-2'>
+                    <a
+                      href={project.html_url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      aria-label='A link to this repository page'
+                      className='text-[#a1a1a1] geistMono-Regular hover:underline ml-2'
+                    >
                       {t('github')}
                     </a>
                   </div>
