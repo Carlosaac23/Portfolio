@@ -4,8 +4,8 @@ function WorkPage() {
   const { t } = useTranslation();
 
   return (
-    <div className='flex flex-col gap-5 geistMono-Regular text-white'>
-      <p className='text-left text-[#e4e4e7] border-b-2 border-white pb-4 max-sm:leading-loose'>{t('workDescription')} 👈🏻</p>
+    <div className='flex flex-col gap-5 geistMono-Regular text-[#fafafa]'>
+      <p className='text-left text-[#d4d4d4] border-b-2 border-[#fafafa] pb-4 max-sm:leading-loose'>{t('workDescription')} 👈🏻</p>
     </div>
   );
 }

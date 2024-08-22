@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className='contact section' id='contact'>
-      <h2 className='text-2xl geistMono-Bold text-white mb-10'>{t('contactTitle')}</h2>
+      <h2 className='text-2xl geistMono-Bold text-[#fafafa] mb-10'>{t('contactTitle')}</h2>
       <div className='contact-container container grid max-sm:justify-center'>
         <form action='' className='contact-form grid gap-4' id='contacto-form' onSubmit={handleSubmit}>
           <div className='contact-group grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
               type='text'
               name='userName'
               placeholder={t('inputName')}
-              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular max-sm:w-80'
+              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#737373] focus:outline-none focus:ring-1 focus:ring-[#d4d4d4] text-[#fafafa] geistMono-Regular max-sm:w-80'
               value={formData.userName}
               onChange={handleChange}
             />
@@ -125,7 +125,7 @@ const Contact: React.FC = () => {
               type='text'
               name='userLastName'
               placeholder={t('inputLastName')}
-              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular max-sm:w-80'
+              className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#737373] focus:outline-none focus:ring-1 focus:ring-[#d4d4d4] text-[#fafafa] geistMono-Regular max-sm:w-80'
               value={formData.userLastName}
               onChange={handleChange}
             />
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
             type='email'
             name='userEmail'
             placeholder={t('inputEmail')}
-            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular max-sm:w-80'
+            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#737373] focus:outline-none focus:ring-1 focus:ring-[#d4d4d4] text-[#fafafa] geistMono-Regular max-sm:w-80'
             value={formData.userEmail}
             onChange={handleChange}
           />
@@ -143,14 +143,14 @@ const Contact: React.FC = () => {
             title={t('inputMsgHover')}
             name='userMessage'
             placeholder={t('inputMsg')}
-            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#27272a] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#ededed] text-white geistMono-Regular h-44 resize-none mb-8'
+            className='contact-input p-4 rounded-md bg-[#0a0a0a] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease placeholder-[#737373] focus:outline-none focus:ring-1 focus:ring-[#d4d4d4] text-[#fafafa] geistMono-Regular h-44 resize-none mb-8'
             value={formData.userMessage}
             onChange={handleChange}
           />
           <button
             title={t('buttonHover')}
             type='submit'
-            className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#5a5a5a] transitions-all duration-300 ease text-white geistMono-Bold p-5 rounded-md cursor-pointer self-center'
+            className='button contact-button bg-[#0a0a0a] border border-[#262626] hover:border-[#5a5a5a] transitions-all duration-300 ease text-[#fafafa] geistMono-Bold p-5 rounded-md cursor-pointer self-center'
           >
             {t('button')}
           </button>

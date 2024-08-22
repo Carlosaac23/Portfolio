@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #000;
+  background-color: #0a0a0a;
 }
 
 /* Fonts */
@@ -35,7 +35,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #151515;
+  background-color: #171717;
   border-radius: 5px;
 }
 
@@ -45,5 +45,5 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #0a0a0a;
 }
