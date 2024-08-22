@@ -10,12 +10,12 @@ function HomePage() {
       <p className='text-left text-[#e4e4e7]'>{t('description')} 💪🏻</p>
       <div className='flex flex-col gap-5'>
         <div className='flex w-[100%] justify-between gap-5'>
-          <img src='images/vertical-2.webp' alt='Vertical Image 1' className='w-[35%] rounded-md' />
-          <img src='/images/horizontal-2.webp' alt='Horizontal Image 1' className='w-[65%] rounded-md' />
+          <img title='A image of PC' loading='lazy' src='images/vertical-2.webp' alt='Vertical Image 1' className='w-[35%] rounded-md' />
+          <img title='A image of a hand writing' loading='lazy' src='/images/horizontal-2.webp' alt='Horizontal Image 1' className='w-[65%] rounded-md' />
         </div>
         <div className='flex w-[100%] justify-between gap-5'>
-          <img src='/images/horizontal-1.webp' alt='Horizontal Image 2' className='w-[65%] rounded-md' />
-          <img src='/images/vertical-1.webp' alt='Vertical Image 2' className='w-[35%] rounded-md' />
+          <img title='A image of some plants' loading='lazy' src='/images/horizontal-1.webp' alt='Horizontal Image 2' className='w-[65%] rounded-md' />
+          <img title='A image of a keyboard' loading='lazy' src='/images/vertical-1.webp' alt='Vertical Image 2' className='w-[35%] rounded-md' />
         </div>
       </div>
       <p className='text-left'>{t('social')} 👇🏻</p>

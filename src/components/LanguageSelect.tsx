@@ -59,7 +59,7 @@ const LanguageSelect: React.FC = () => {
             <li
               key={language.code}
               className={`px-2 py-1 cursor-pointer flex items-center justify-between text-white geistMono-Regular ${
-                i18n.language === language.code ? 'bg-[#27272a] rounded-[4px]' : ''
+                i18n.language === language.code ? 'bg-[#27272a] rounded-[4px]' : 'hover:bg-[#1b1b1b] rounded-[5px] transition-all duration-300 ease'
               }`}
               onClick={() => handleLanguageChange(language.code)}
               role='option'

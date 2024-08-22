@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     if (!formData.userName && !formData.userLastName && !formData.userEmail && !formData.userMessage) {
-      toast.warning(t('allInputsRequired'));
+      toast.error(t('allInputsRequired'));
       return;
     }
 
@@ -35,8 +35,18 @@ const Contact: React.FC = () => {
       return;
     }
 
+    if (formData.userName.length < 3) {
+      toast.error(t('inputNameLength'));
+      return;
+    }
+
     if (!formData.userLastName) {
       toast.warning(t('inputLastNameRequired'));
+      return;
+    }
+
+    if (formData.userLastName.length < 3) {
+      toast.error(t('inputLastNameLength'));
       return;
     }
 
@@ -47,6 +57,11 @@ const Contact: React.FC = () => {
 
     if (!formData.userMessage) {
       toast.warning(t('inputMsgRequired'));
+      return;
+    }
+
+    if (formData.userMessage.length < 10) {
+      toast.error(t('inputMsgLength'));
       return;
     }
 
@@ -133,6 +148,7 @@ const Contact: React.FC = () => {
             onChange={handleChange}
           />
           <button
+            title={t('buttonHover')}
             type='submit'
             className='button contact-button bg-[#0a0a0a] border border-[#27272a] hover:border-[#52525b] transitions-all duration-300 ease text-white geistMono-Bold p-5 rounded-md cursor-pointer self-center'
           >
