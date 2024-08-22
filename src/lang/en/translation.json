@@ -32,5 +32,5 @@
   "inputMsgRequired": "You must add a message",
   "messageSent": "Message sent successfully!",
   "messageNotSent": "Message not sent. Please try again.",
-  "copyright": "Copyright"
+  "madeBy": "Made by"
 }
