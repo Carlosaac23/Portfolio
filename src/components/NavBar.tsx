@@ -13,15 +13,19 @@ function NavBar() {
   ];
 
   return (
-    <div className='flex justify-between items-center mb-16'>
-      <ul className='flex text-[#fafafa] text-lg geistMono-Regular gap-6 max-sm:text-sm max-sm:gap-2'>
+    <div className='flex justify-between items-center mb-16 max-sm:flex-col'>
+      <ul className='flex text-[#fafafa] text-lg geistMono-Regular gap-6 max-sm:text-base max-sm:gap-5'>
         {navLinks.map(navLink => (
           <li key={navLink.path}>
-            <Link to={navLink.path}>{navLink.title}</Link>
+            <Link className='hover:text-[#a3a3a3] transition-all duration-300 ease' to={navLink.path}>
+              {navLink.title}
+            </Link>
           </li>
         ))}
       </ul>
-      <LanguageSelect />
+      <div className='flex justify-center max-sm:mt-6'>
+        <LanguageSelect />
+      </div>
     </div>
   );
 }
