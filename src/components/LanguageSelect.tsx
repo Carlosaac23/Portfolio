@@ -8,19 +8,21 @@ type Language = {
 };
 
 const languages: Language[] = [
-  { code: 'en', name: 'EN' },
-  { code: 'es', name: 'ES' },
+  { code: 'en', name: 'English' },
+  { code: 'es', name: 'Spanish' },
 ];
 
 const LanguageSelect: React.FC = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
+        setIsVisible(false);
       }
     };
 
@@ -33,28 +35,48 @@ const LanguageSelect: React.FC = () => {
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === 'Escape') {
       setIsOpen(false);
+      setIsVisible(false);
     }
   };
 
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
     setIsOpen(false);
+    setIsVisible(false);
+  };
+
+  const selectedLanguage = languages.find(language => language.code === i18n.language);
+
+  const handleToggleDropdown = () => {
+    if (isOpen) {
+      setIsVisible(false);
+      setTimeout(() => setIsOpen(false), 100);
+    } else {
+      setIsOpen(true);
+      setTimeout(() => setIsVisible(true), 100);
+    }
   };
 
   return (
     <div className='relative inline-block' ref={dropdownRef}>
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className='text-[#fafafa] geistMono-Regular bg-[#0a0a0a] border border-[#262626] rounded-md w-[56px] p-1 ml-[15px] hover:border-[#5a5a5a] focus:outline-none transition-all duration-300 ease cursor-pointer flex items-center justify-between'
+        onClick={handleToggleDropdown}
+        className='text-[#fafafa] geistMono-Regular bg-[#0a0a0a] border border-[#262626] rounded-md w-28 p-1 ml-[15px] hover:border-[#5a5a5a] focus:outline-none transition-all duration-300 ease cursor-pointer flex items-center justify-between'
         aria-haspopup='listbox'
         aria-expanded={isOpen}
         aria-label='Language'
       >
-        <span className='ml-1'>{i18n.language.toUpperCase()}</span>
+        <span className='ml-1 text-sm'>{selectedLanguage?.name}</span>
         <ChevronDownIcon className='h-4 w-4' />
       </button>
       {isOpen && (
-        <ul className='absolute z-10 right-0 mt-1 w-[56px] bg-[#0a0a0a] border border-[#262626] rounded-md shadow-lg' role='listbox' onKeyDown={handleKeyDown}>
+        <ul
+          className={`absolute z-10 right-0 mt-1 w-28 bg-[#0a0a0a] border border-[#262626] rounded-md transition-opacity duration-500 ease ${
+            isVisible ? 'opacity-100' : 'opacity-0'
+          }`}
+          role='listbox'
+          onKeyDown={handleKeyDown}
+        >
           {languages.map(language => (
             <li
               key={language.code}
