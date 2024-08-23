@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSelect from './LanguageSelect';
 
@@ -17,9 +17,12 @@ function NavBar() {
       <ul className='flex text-[#fafafa] text-lg geistMono-Regular gap-6 max-sm:text-base max-sm:gap-5'>
         {navLinks.map(navLink => (
           <li key={navLink.path}>
-            <Link className='hover:text-[#a3a3a3] transition-all duration-300 ease' to={navLink.path}>
+            <NavLink
+              to={navLink.path}
+              className={({ isActive }) => `transition-colors duration-300 ease hover:text-[#a3a3a3] ${isActive ? 'text-[#a3a3a3]' : ''}`}
+            >
               {navLink.title}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
