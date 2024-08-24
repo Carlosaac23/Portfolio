@@ -112,6 +112,7 @@ const Contact: React.FC = () => {
         <form className='contact-form grid gap-4' onSubmit={handleSubmit}>
           <div className='contact-group grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
             <input
+              autoFocus
               title={t('inputNameHover')}
               type='text'
               name='userName'
@@ -120,6 +121,7 @@ const Contact: React.FC = () => {
               value={formData.userName}
               onChange={handleChange}
             />
+
             <input
               title={t('inputLastNameHover')}
               type='text'
@@ -130,6 +132,7 @@ const Contact: React.FC = () => {
               onChange={handleChange}
             />
           </div>
+
           <input
             title={t('inputEmailHover')}
             type='email'
@@ -139,6 +142,7 @@ const Contact: React.FC = () => {
             value={formData.userEmail}
             onChange={handleChange}
           />
+
           <textarea
             title={t('inputMsgHover')}
             name='userMessage'
@@ -147,6 +151,7 @@ const Contact: React.FC = () => {
             value={formData.userMessage}
             onChange={handleChange}
           />
+
           <div className='flex justify-end max-sm:justify-center'>
             <button
               title={t('buttonHover')}
