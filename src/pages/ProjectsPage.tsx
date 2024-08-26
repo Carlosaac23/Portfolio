@@ -41,7 +41,7 @@ function ProjectsPage() {
                 >
                   <div className='text-left'>
                     <h2 className='text-[#fafafa] text-base geistMono-Bold'>{project.name}</h2>
-                    <div className='text-[#d4d4d4] text-sm max-h-10 overflow-y-auto'>
+                    <div className='text-[#d4d4d4] text-sm max-h-14 overflow-y-auto'>
                     <p className='mr-1'>{project.description}</p>
                     </div>
                     <div className='mt-1'></div>
