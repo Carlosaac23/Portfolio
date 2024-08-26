@@ -45,5 +45,6 @@ html {
 }
 
 ::-webkit-scrollbar-track {
+  border-radius: 5px;
   background-color: #0a0a0a;
 }
