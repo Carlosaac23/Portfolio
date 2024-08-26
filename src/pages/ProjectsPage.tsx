@@ -40,8 +40,11 @@ function ProjectsPage() {
                   className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] rounded-md hover:border-[#5a5a5a] min-h-[100px] transition-all duration-300 ease max-sm:w-72'
                 >
                   <div className='text-left'>
-                    <p className='text-[#fafafa] geistMono-Bold'>{project.name}</p>
-                    <p className='text-[#d4d4d4] text-sm'>{project.description}</p>
+                    <h2 className='text-[#fafafa] text-base geistMono-Bold'>{project.name}</h2>
+                    <div className='text-[#d4d4d4] text-sm max-h-10 overflow-y-auto'>
+                    <p className='mr-1'>{project.description}</p>
+                    </div>
+                    <div className='mt-1'></div>
                     {project.homepage && (
                       <a
                         href={project.homepage}
