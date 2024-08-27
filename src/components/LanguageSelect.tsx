@@ -61,7 +61,7 @@ const LanguageSelect: React.FC = () => {
     <div className='relative inline-block' ref={dropdownRef}>
       <button
         onClick={handleToggleDropdown}
-        className='text-[#fafafa] geistMono-Regular bg-[#0a0a0a] border border-[#262626] rounded-md w-28 p-1 ml-[15px] hover:border-[#5a5a5a] focus:outline-none transition-all duration-300 ease cursor-pointer flex items-center justify-between'
+        className='text-[#fafafa] geistMono-Regular bg-[#0a0a0a] border border-[#262626] rounded-md w-28 p-1 ml-[15px] hover:border-[#5a5a5a] focus:outline-none duration-300 ease-button-ease cursor-pointer flex items-center justify-between'
         aria-haspopup='listbox'
         aria-expanded={isOpen}
         aria-label='Language'
@@ -71,7 +71,7 @@ const LanguageSelect: React.FC = () => {
       </button>
       {isOpen && (
         <ul
-          className={`absolute z-10 right-0 mt-1 w-28 bg-[#0a0a0a] border border-[#262626] rounded-md transition-opacity duration-500 ease ${
+          className={`absolute z-10 right-0 mt-1 w-28 bg-[#0a0a0a] border border-[#262626] rounded-md duration-300 ease-button-ease ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
           role='listbox'

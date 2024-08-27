@@ -19,7 +19,7 @@ function NavBar() {
           <li key={navLink.path}>
             <NavLink
               to={navLink.path}
-              className={({ isActive }) => `transition-colors duration-300 ease hover:text-[#a3a3a3] ${isActive ? 'text-[#a3a3a3]' : ''}`}
+              className={({ isActive }) => `duration-300 ease-button-ease hover:text-[#a3a3a3] ${isActive ? 'text-[#a3a3a3]' : ''}`}
             >
               {navLink.title}
             </NavLink>

@@ -22,7 +22,7 @@ function HomePage() {
 
       <div className='grid gap-5 text-sm md:grid-cols-[1fr_1fr_1fr] max-sm:place-items-center'>
         <a title='A link to my GitHub' href='https://github.com/Carlosaac23' target='_blank' rel='noopener noreferrer' aria-label='A link to my GitHub'>
-          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease rounded-md max-sm:w-52'>
+          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] duration-300 ease-button-ease rounded-md max-sm:w-52'>
             <img src='/images/github.svg' alt='GitHub Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p className='geistMono-Regular'>@Carlosaac23</p>
@@ -31,7 +31,7 @@ function HomePage() {
           </div>
         </a>
         <a title='A link to my personal X' href='https://x.com/Carlosaac23' target='_blank' rel='noopener noreferrer' aria-label='A link to my personal X'>
-          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease rounded-md max-sm:w-52'>
+          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] duration-300 ease-button-ease rounded-md max-sm:w-52'>
             <img src='/images/x.svg' alt='X Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p className='geistMono-Regular'>@Carlosaac23</p>
@@ -46,7 +46,7 @@ function HomePage() {
           rel='noopener noreferrer'
           aria-label='A link to my Linkedin'
         >
-          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] transition-all duration-300 ease rounded-md max-sm:w-52'>
+          <div className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] duration-300 ease-button-ease rounded-md max-sm:w-52'>
             <img src='/images/linkedin.svg' alt='Linkeding Logo' className='w-7 h-7' />
             <div className='text-left'>
               <p className='geistMono-Regular'>Carlos Acosta</p>
