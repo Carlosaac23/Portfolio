@@ -22,6 +22,11 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  function isValidEmail(email: string): boolean {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -52,6 +57,11 @@ const Contact: React.FC = () => {
 
     if (!formData.userEmail) {
       toast.warning(t('inputEmailRequired'));
+      return;
+    }
+
+    if (!isValidEmail(formData.userEmail)) {
+      toast.error(t('inputEmailInvalid', { value: formData.userEmail }));
       return;
     }
 
@@ -135,7 +145,6 @@ const Contact: React.FC = () => {
 
           <input
             title={t('inputEmailHover')}
-            type='email'
             name='userEmail'
             placeholder={t('inputEmail')}
             className='contact-input p-4 rounded-md bg-[#111111] border border-[#262626] hover:border-[#5a5a5a] duration-300 ease-button-ease placeholder-[#737373] focus:outline-none focus:ring-1 focus:ring-[#d4d4d4] text-[#fafafa] geistMono-Regular max-sm:w-80'
