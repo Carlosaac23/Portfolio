@@ -8,16 +8,6 @@ function HomePage() {
     <div className='flex flex-col gap-10 geistMono-Regular text-[#fafafa]'>
       <p className='text-left text-2xl geistMono-Bold'>{t('presentation')} 👋🏻</p>
       <p className='text-left text-[#d4d4d4] max-sm:leading-loose'>{t('description')} 💪🏻</p>
-      <div className='flex flex-col gap-5'>
-        <div className='flex w-[100%] justify-between gap-5'>
-          <img title='A image of PC' loading='lazy' src='images/vertical-2.webp' alt='Vertical Image 1' className='w-[35%] rounded-md' />
-          <img title='A image of a hand writing' loading='lazy' src='/images/horizontal-2.webp' alt='Horizontal Image 1' className='w-[65%] rounded-md' />
-        </div>
-        <div className='flex w-[100%] justify-between gap-5'>
-          <img title='A image of some plants' loading='lazy' src='/images/horizontal-1.webp' alt='Horizontal Image 2' className='w-[65%] rounded-md' />
-          <img title='A image of a keyboard' loading='lazy' src='/images/vertical-1.webp' alt='Vertical Image 2' className='w-[35%] rounded-md' />
-        </div>
-      </div>
       <p className='text-left text-[#d4d4d4] max-sm:leading-loose'>{t('social')} 👇🏻</p>
 
       <div className='grid gap-5 text-sm md:grid-cols-[1fr_1fr_1fr] max-sm:place-items-center'>

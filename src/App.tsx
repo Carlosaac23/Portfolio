@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Toaster position='bottom-right' theme='dark' className='geistMono-Regular' richColors />
-        <main className='min-h-screen'>
+        <main className='min-h-[52rem] '>
           <NavBar />
           <Routes>
             <Route path='/' element={<HomePage />} />

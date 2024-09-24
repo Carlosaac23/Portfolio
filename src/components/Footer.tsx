@@ -4,7 +4,7 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className='w-full text-center pt-7 text-[#fafafa] geistMono-Regular'>
+    <footer className='w-full mt-8 text-center text-[#fafafa] geistMono-Regular'>
       <p>
         {t('madeBy')} <span className='geistMono-Bold'>Carlos Acosta</span>
       </p>

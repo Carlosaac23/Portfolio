@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       transitionTimingFunction: {
-        'button-ease': 'cubic-bezier(0.4, 0, 0.2, 1)'
-      }
+        'button-ease': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
     },
   },
   plugins: [],
