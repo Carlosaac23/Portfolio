@@ -51,7 +51,7 @@ function ProjectsPage() {
                         target='_blank'
                         rel='noopener noreferrer'
                         aria-label='A link to this project page'
-                        className='text-[#737373] geistMono-Regular hover:underline'
+                        className='text-[#bae6fd] geistMono-Regular hover:underline'
                       >
                         {t('website')}
                       </a>
@@ -62,7 +62,7 @@ function ProjectsPage() {
                       target='_blank'
                       rel='noopener noreferrer'
                       aria-label='A link to this repository page'
-                      className='text-[#737373] geistMono-Regular hover:underline ml-2'
+                      className='text-[#bae6fd] geistMono-Regular hover:underline ml-2'
                     >
                       {t('github')}
                     </a>
