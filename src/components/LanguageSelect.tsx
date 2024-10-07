@@ -64,7 +64,6 @@ const LanguageSelect: React.FC = () => {
         className='text-[#fafafa] geistMono-Regular bg-[#0a0a0a] border border-[#262626] rounded-md w-28 p-1 ml-[15px] hover:border-[#5a5a5a] focus:outline-none duration-300 ease-button-ease cursor-pointer flex items-center justify-between'
         aria-haspopup='listbox'
         aria-expanded={isOpen}
-        aria-label='Language'
       >
         <span className='ml-1 text-sm'>{selectedLanguage?.name}</span>
         <ChevronDownIcon className='h-4 w-4' />

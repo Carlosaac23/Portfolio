@@ -47,10 +47,10 @@ function ProjectsPage() {
                     <div className='mt-2'></div>
                     {project.homepage && (
                       <a
+                        title='A live page link to this project'
                         href={project.homepage}
                         target='_blank'
                         rel='noopener noreferrer'
-                        aria-label='A link to this project page'
                         className='text-[#bae6fd] geistMono-Regular hover:underline'
                       >
                         {t('website')}
@@ -58,10 +58,10 @@ function ProjectsPage() {
                     )}{' '}
                     -
                     <a
+                      title='A repository link to this project'
                       href={project.html_url}
                       target='_blank'
                       rel='noopener noreferrer'
-                      aria-label='A link to this repository page'
                       className='text-[#bae6fd] geistMono-Regular hover:underline ml-2'
                     >
                       {t('github')}
