@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProjectsPage from './pages/ProjectsPage';
-import WorkPage from './pages/WorkPage';
-import ContactPage from './pages/ContactPage';
+import HomePage from './pages/Home';
+import ProjectsPage from './pages/Projects';
+import WorkPage from './pages/Work';
+import ContactPage from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Toaster } from 'sonner';
