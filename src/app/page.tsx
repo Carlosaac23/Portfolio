@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <div className='flex flex-col gap-10 text-[#fafafa]'>
-      <h1 className='text-left text-xl'>Carlos Acosta</h1>
+      <h1 className='text-left text-2xl'>Carlos Acosta</h1>
       <p className='text-justify text-[#d4d4d4] max-sm:leading-loose'>
         I am a{' '}
         <a
