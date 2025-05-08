@@ -3,7 +3,7 @@
 import Avatar from './Avatar';
 import { NavItem } from './NavItem';
 
-function NavBar() {
+export default function NavBar() {
   const navLinks = [
     { title: 'Home', path: '/' },
     { title: 'Projects', path: '/projects' },
@@ -11,10 +11,12 @@ function NavBar() {
 
   return (
     <div className='flex justify-between items-center mb-16 max-sm:flex-col'>
-      <ul className='flex text-[#fafafa] text-lg gap-6'>
-        {navLinks.map(nav => {
-          return <NavItem key={nav.path} path={nav.path} title={nav.title}></NavItem>;
-        })}
+      <ul>
+        <li className='flex text-[#fafafa] text-lg gap-6'>
+          {navLinks.map(nav => {
+            return <NavItem key={nav.path} path={nav.path} title={nav.title}></NavItem>;
+          })}
+        </li>
       </ul>
       <div className='flex justify-center max-sm:mt-6'>
         <Avatar />
@@ -22,5 +24,3 @@ function NavBar() {
     </div>
   );
 }
-
-export default NavBar;

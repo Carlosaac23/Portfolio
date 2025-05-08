@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer className='mt-10 flex justify-center gap-6 text-[#9d9d9d] Geist-Regular'>
       <a
@@ -34,5 +34,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
