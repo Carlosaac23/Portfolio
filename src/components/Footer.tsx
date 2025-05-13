@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='mt-10 flex justify-center gap-6 text-[#9d9d9d] Geist-Regular'>
+    <footer className='mt-10 flex justify-center gap-6 text-[#9d9d9d]'>
       <a
         title='A link to my GitHub'
         href='https://x.com/Carlosaac23'
