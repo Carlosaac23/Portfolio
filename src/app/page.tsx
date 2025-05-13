@@ -16,12 +16,12 @@ export default function HomePage() {
         <a href='https://www.sena.edu.co/es-co/Paginas/default.aspx' target='_blank' rel='noopener noreferrer' className='font-bold text-[#fafafa]'>
           SENA,
         </a>{' '}
-        and I love the tech industry. I&apos;m learning and creating projects to improve my skills and enter the tech world. I have a special taste for products
-        from{' '}
+        and I love the tech industry. I&apos;m learning and creating projects to improve my skills and enter the tech world. I have a special taste for{' '}
         <a href='https://www.vercel.com' target='_blank' rel='noopener noreferrer' className='font-bold text-[#fafafa]'>
-          Vercel,
+          Vercel
         </a>{' '}
-        and it&apos;s a great motivation for me. I am excited for the opportunity to work and continue learning about this vast and beautiful world.
+        products, and it&apos;s a great motivation for me. I&apos;m excited to continue growing, facing new challenges, and learning more daily in this
+        incredible world of technology.
       </p>
     </div>
   );
