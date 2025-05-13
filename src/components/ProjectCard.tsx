@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       key={project.name}
-      className='flex items-center p-3 justify-between bg-[#111111] border border-[#262626] rounded-md min-h-[100px] hover:border-[#5a5a5a] duration-200 ease-in-out max-sm:w-72'
+      className='flex items-center p-3 justify-between bg-[#0a0a0a] border border-[#262626] rounded-md min-h-[100px] hover:border-[#5a5a5a] duration-200 ease-in-out max-sm:w-72'
     >
       <div className='text-left'>
         <h2 className='text-[#fafafa] text-lg Geist-Regular'>{project.name}</h2>
