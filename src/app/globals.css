@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #0a0a0a;
+  background-color: #000000;
 }
 
 main {
@@ -43,5 +43,5 @@ body {
 
 ::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #0a0a0a;
+  background-color: #000000;
 }
