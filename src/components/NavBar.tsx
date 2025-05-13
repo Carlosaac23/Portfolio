@@ -10,7 +10,7 @@ export default function NavBar() {
   ];
 
   return (
-    <div className='flex justify-between items-center mb-16 max-sm:flex-col'>
+    <div className='flex justify-between items-center mb-16'>
       <ul>
         <li className='flex text-[#fafafa] text-lg gap-6'>
           {navLinks.map(nav => {
@@ -18,7 +18,7 @@ export default function NavBar() {
           })}
         </li>
       </ul>
-      <div className='flex justify-center max-sm:mt-6'>
+      <div className='flex justify-center'>
         <Avatar />
       </div>
     </div>
