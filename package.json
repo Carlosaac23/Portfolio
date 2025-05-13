@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "geist": "^1.4.2",
     "next": "15.3.1",
     "next-view-transitions": "^0.3.4",
