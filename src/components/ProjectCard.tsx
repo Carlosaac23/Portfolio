@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className='text-left'>
         <h2 className='text-[#fafafa] text-lg'>{project.name}</h2>
         <div className='text-[#d4d4d4] text-sm max-h-14 overflow-y-auto'>
-          <p className='mr-1'>{project.description || 'No description available'}</p>
+          <p className='mr-1 text-left text-pretty'>{project.description || 'No description available'}</p>
         </div>
         <div className='mt-2'></div>
         {project.homepage ? (

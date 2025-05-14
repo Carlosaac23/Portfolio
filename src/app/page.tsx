@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <div className='flex flex-col gap-10 text-[#fafafa]'>
       <h1 className='text-left text-2xl'>Carlos Acosta</h1>
-      <p className='text-justify text-[#d4d4d4] max-sm:leading-loose'>
+      <p className='text-left text-pretty text-[#d4d4d4] max-sm:leading-loose'>
         I am a{' '}
         <a
           href='https://zajuna.sena.edu.co/pdfs/titulada/tecgnologias/analisis_desarrollo_software.pdf'
