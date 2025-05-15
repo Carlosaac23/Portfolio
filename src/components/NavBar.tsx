@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <div className='flex justify-between items-center mb-16'>
       <ul>
-        <li className='flex text-[#fafafa] text-lg gap-6'>
+        <li className='flex text-[#9d9d9d] text-lg gap-6'>
           {navLinks.map(nav => {
             return <NavItem key={nav.path} path={nav.path} title={nav.title}></NavItem>;
           })}
