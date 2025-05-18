@@ -1,9 +1,5 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [new URL('https://www.github.com/Carlosaac23.png')],
-  },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

@@ -8,7 +8,7 @@ export default function Footer() {
         rel='noopener noreferrer'
         className='hover:text-[#fafafa] transition-colors duration-200 ease-in-out'
       >
-        Twitter
+        Twitter/X
       </a>
       <a
         title='A link to my GitHub'

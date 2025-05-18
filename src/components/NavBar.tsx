@@ -1,6 +1,6 @@
 'use client';
 
-import Avatar from './Avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { NavItem } from './NavItem';
 
 export default function NavBar() {
@@ -19,7 +19,16 @@ export default function NavBar() {
         </li>
       </ul>
       <div className='flex justify-center'>
-        <Avatar />
+        <a
+          href='https://www.github.com/Carlosaac23'
+          target='_blank'
+          className='hover:cursor-pointer hover:opacity-80 transition-opacity duration-200 ease-in-out'
+        >
+          <Avatar>
+            <AvatarImage src='https://github.com/Carlosaac23.png' alt='Carlosaac23' />
+            <AvatarFallback>CA</AvatarFallback>
+          </Avatar>
+        </a>
       </div>
     </div>
   );
