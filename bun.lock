@@ -403,6 +403,13 @@
       "sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA=="
     ],
 
+    "@opentelemetry/api": [
+      "@opentelemetry/api@1.9.0",
+      "",
+      {},
+      "sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg=="
+    ],
+
     "@radix-ui/react-avatar": [
       "@radix-ui/react-avatar@1.1.9",
       "",
