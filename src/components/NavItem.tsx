@@ -13,7 +13,11 @@ export function NavItem({ path, title }: NavItemProps) {
   const isActive = pathName === path;
 
   return (
-    <Link href={path} prefetch className={`hover:text-[#fafafa] duration-200 ease-in-out ${isActive ? 'text-[#fafafa]' : ''}`}>
+    <Link
+      href={path}
+      prefetch
+      className={`hover:text-[#171717] duration-200 ease-in-out dark:hover:text-white ${isActive ? 'text-[#171717] dark:text-white' : ''}`}
+    >
       {title}
     </Link>
   );
