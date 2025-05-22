@@ -169,4 +169,11 @@ main {
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Agregar transiciones suaves para el cambio de tema */
+  body,
+  section,
+  div {
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
 }

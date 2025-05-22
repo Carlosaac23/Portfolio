@@ -1,7 +1,11 @@
+import { TextAnimate } from '@/components/magicui/text-animate';
+
 export default function HomePage() {
   return (
-    <div className='flex flex-col gap-10 text-[#333333] dark:text-white'>
-      <h1 className='text-left text-2xl'>Carlos Acosta</h1>
+    <div className='flex flex-col gap-10 text-[rgb(51,51,51)] dark:text-white'>
+      <TextAnimate animation='blurInUp' by='character' once as='h1' className='text-left text-2xl'>
+        Carlos Acosta
+      </TextAnimate>
       <p className='text-left text-pretty text-[#333333] max-sm:leading-loose dark:text-[#ededed]'>
         I am a{' '}
         <a
