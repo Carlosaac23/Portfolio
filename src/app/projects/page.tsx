@@ -10,10 +10,12 @@ interface Project {
 
 async function getProjects(): Promise<Project[]> {
   const GITHUB_API_LINK = 'https://api.github.com/users/Carlosaac23/repos';
-  const res = await fetch(GITHUB_API_LINK, {
-    next: { revalidate: 3600 },
+  const response = await fetch(GITHUB_API_LINK, {
+    next: {
+      revalidate: 3600,
+    },
   });
-  const data: Project[] = await res.json();
+  const data: Project[] = await response.json();
   return data.filter(repo => repo.stargazers_count >= 1);
 }
 
