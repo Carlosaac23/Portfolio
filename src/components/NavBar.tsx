@@ -33,8 +33,8 @@ export default function NavBar() {
           </Button>
         </div>
 
-        <Avatar className='shadow-md cursor-pointer'>
-          <AvatarImage src='https://github.com/Carlosaac23.png' alt='Carlosaac23' />
+        <Avatar className='shadow-md'>
+          <AvatarImage src='https://github.com/Carlosaac23.png' alt='@Carlosaac23' />
           <AvatarFallback>CA</AvatarFallback>
         </Avatar>
       </div>
