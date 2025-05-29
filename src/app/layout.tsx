@@ -14,6 +14,30 @@ export const metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  metadataBase: new URL('https://portfolio-steel-kappa-78.vercel.app/'),
+  openGraph: {
+    title: 'Carlos Acosta - Portfolio',
+    description: 'Personal Portfolio',
+    url: 'https://portfolio-steel-kappa-78.vercel.app/',
+    siteName: 'Carlos Acosta - Portfolio',
+    images: [
+      {
+        url: '/public/cap.png',
+        width: 1200,
+        height: 630,
+        alt: 'Carlos Acosta - Portfolio',
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Carlos Acosta - Portfolio',
+    description: 'Personal Portfolio',
+    creator: '@Carlosaac23',
+    images: ['/public/cap.png'],
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
