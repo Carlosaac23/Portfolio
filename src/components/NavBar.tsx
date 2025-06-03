@@ -5,9 +5,24 @@ import { NavItem } from './NavItem';
 import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
 import { Moon, Sun } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function NavBar() {
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() === 't') {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [theme, setTheme]);
 
   const navLinks = [
     { title: 'Home', path: '/' },
