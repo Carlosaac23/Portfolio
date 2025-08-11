@@ -2,6 +2,8 @@
 
 Este es mi portafolio personal, desarrollado para mostrar mi perfil profesional, formación y los proyectos que he creado.
 
+![Screenshot of my portfolio](./public/cap.png)
+
 ## Sobre el portafolio
 
 Construí esta plataforma utilizando **Next.js** y **React** con TypeScript, priorizando buenas prácticas de componentes reutilizables, temas claro/oscuro y una excelente experiencia en dispositivos móviles y de escritorio. El diseño integra la fuente **Geist**, TailwindCSS para los estilos y librerías UI modernas como Radix UI. Todo el código está estructurado para ser fácil de mantener y escalar.
