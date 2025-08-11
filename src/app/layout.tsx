@@ -28,7 +28,7 @@ export const metadata = {
         alt: 'Carlos Acosta - Portfolio',
       },
     ],
-    locale: 'es_ES',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
