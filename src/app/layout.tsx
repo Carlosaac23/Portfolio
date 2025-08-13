@@ -22,7 +22,7 @@ export const metadata = {
     siteName: 'Carlos Acosta - Portfolio',
     images: [
       {
-        url: '/public/cap.png',
+        url: '/cap.png',
         width: 1200,
         height: 630,
         alt: 'Carlos Acosta - Portfolio',
@@ -36,7 +36,7 @@ export const metadata = {
     title: 'Carlos Acosta - Portfolio',
     description: 'Personal Portfolio',
     creator: '@Carlosaac23',
-    images: ['/public/cap.png'],
+    images: ['/cap.png'],
   },
 };
 
