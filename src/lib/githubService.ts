@@ -12,7 +12,7 @@ export default async function getProjects(): Promise<Project[]> {
   try {
     const response = await fetch(GITHUB_API_LINK, {
       next: {
-        revalidate: 3600,
+        revalidate: 1800,
       },
     });
 
