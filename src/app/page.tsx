@@ -21,7 +21,8 @@ export default function HomePage() {
         >
           SENA,
         </a>{' '}
-        and I love the tech industry. I&apos;m learning and creating projects to improve my skills and enter the tech world. I have a special taste for{' '}
+        and I love the tech industry. I&apos;m learning and creating projects to improve my skills and enter the tech world. I have a{' '}
+        <span className='italic font-semibold'>special taste</span> for{' '}
         <a href='https://www.vercel.com' target='_blank' rel='noopener noreferrer' className='font-bold text-[#171717] dark:text-white'>
           Vercel
         </a>{' '}
