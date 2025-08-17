@@ -4,14 +4,14 @@
     "repo_url": "https://github.com/Carlosaac23/portfolio",
     "homepage": "https://portfolio-steel-kappa-78.vercel.app/",
     "description": "My portfolio was created using Next.js, TS, Tailwind, next-view-transitions and inspired by Vercel.",
-    "stack": ["Next.js", "Tailwind", "Vercel", "Bun"]
+    "stack": ["Next.js", "Tailwind", "Vercel", "Bun", "Typescript"]
   },
   {
     "name": "Porsche Page",
     "repo_url": "https://github.com/Carlosaac23/Cars",
     "homepage": "https://cars-xi-ashen.vercel.app/",
-    "description": "A dynamic web about cars using ScrollReveal, HTML, CSS and JS. I made it based on simplicity and velocity.",
-    "stack": ["Javascript", "HTML", "CSS"]
+    "description": "A dynamic web about cars using HTML, CSS and JS. I made it based on simplicity and velocity.",
+    "stack": ["Javascript", "HTML", "CSS", "Swiper.js", "MixItUp"]
   },
   {
     "name": "Password Generator",
