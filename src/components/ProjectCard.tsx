@@ -1,22 +1,22 @@
 'use client';
 
-interface Project {
+export interface Project {
   name: string;
-  description: string;
-  html_url: string;
+  repo_url: string;
   homepage: string;
-  stargazers_count: number;
+  description: string;
+  stack: string[];
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       key={project.name}
-      className='flex items-center p-3 justify-between bg-[#fafafa] border border-[#c0c0c0] rounded-md min-h-[100px] hover:border-[#999999] duration-200 ease-in-out max-sm:w-auto shadow-md dark:bg-[#000000] dark:border-[#262626] dark:hover:border-[#5a5a5a]'
+      className='flex flex-col p-3 justify-between bg-neutral-50 border border-neutral-300 rounded-lg max-h-44 hover:border-neutral-400 duration-200 ease-in-out max-sm:w-auto shadow-sm dark:bg-neutral-950 dark:border-neutral-800 dark:hover:border-neutral-700'
     >
       <div className='text-left'>
-        <h2 className='text-[#171717] dark:text-[#ededed] text-lg'>{project.name}</h2>
-        <div className='text-[#333333] dark:text-[#eaeaea] text-sm max-h-14 overflow-y-auto'>
+        <h2 className='text-neutral-950 dark:text-neutral-50 text-lg'>{project.name}</h2>
+        <div className='text-neutral-700 dark:text-neutral-200 text-sm max-h-14 overflow-y-auto'>
           <p className='mr-1 text-left text-pretty'>{project.description || 'No description available'}</p>
         </div>
         <div className='mt-2'></div>
@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={project.homepage}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-[#171717] text-sm hover:text-[#333333] dark:text-[#a1a1a1] dark:hover:text-white transition duration-150 ease-in-out'
+            className='text-neutral-500 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 transition duration-200 ease-in-out'
           >
             {'View website'}
           </a>
@@ -35,18 +35,28 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
 
         {/* Es una línea que separa ambos links */}
-        <span className='mx-2 text-[#5a5a5a] dark:text-[#a1a1a1]'>|</span>
+        <span className='mx-2 text-neutral-600 dark:text-neutral-400'>|</span>
 
         <a
           title='A repository link to this project'
-          href={project.html_url}
+          href={project.repo_url}
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#171717] text-sm hover:text-[#333333] dark:text-[#a1a1a1] dark:hover:text-white transition duration-150 ease-in-out'
+          className='text-neutral-500 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 transition duration-200 ease-in-out'
         >
           {'View on GitHub'}
         </a>
       </div>
+      <ul className='flex flex-wrap gap-2 mt-2 py-0.5 overflow-y-auto'>
+        {project.stack.map(t => (
+          <li
+            key={t}
+            className='px-2 py-1 bg-neutral-50 dark:bg-neutral-950 duration-200 rounded-lg text-xs border border-neutral-300 shadow-sm dark:border-neutral-700'
+          >
+            {t}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
