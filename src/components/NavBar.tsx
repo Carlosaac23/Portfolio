@@ -33,7 +33,7 @@ export default function NavBar() {
     <div className='flex justify-between items-center mb-16'>
       <div>
         <ul>
-          <li className='flex text-[#666666] text-lg gap-6 dark:text-[#a1a1a1]'>
+          <li className='flex text-neutral-500 text-lg gap-6 dark:text-neutral-400'>
             {navLinks.map(nav => {
               return <NavItem key={nav.path} path={nav.path} title={nav.title}></NavItem>;
             })}
