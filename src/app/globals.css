@@ -69,9 +69,9 @@ main {
 .dark-theme,
 [data-theme='dark'],
 .dark {
-  --scrollbar-track: #000000;
-  --scrollbar-thumb: #171717;
-  --scrollbar-thumb-hover: #1b1b1b;
+  --scrollbar-track: #404040;
+  --scrollbar-thumb: #303030;
+  --scrollbar-thumb-hover: #242424;
 }
 
 /* Estilos del scrollbar que usan las variables */
