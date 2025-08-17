@@ -16,7 +16,7 @@ export function NavItem({ path, title }: NavItemProps) {
     <Link
       href={path}
       prefetch
-      className={`hover:text-[#171717] duration-200 ease-in-out dark:hover:text-white ${isActive ? 'text-[#171717] dark:text-white' : ''}`}
+      className={`hover:text-neutral-950 duration-200 ease-in-out dark:hover:text-neutral-50 ${isActive ? 'text-neutral-950 dark:text-neutral-50' : ''}`}
     >
       {title}
     </Link>
