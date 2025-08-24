@@ -3,7 +3,7 @@
 export interface Project {
   name: string;
   repo_url: string;
-  homepage: string;
+  homepage_url: string;
   description: string;
   stack: string[];
 }
@@ -20,10 +20,10 @@ export default function ProjectCard({ project }: { project: Project }) {
           <p className='mr-1 text-left text-pretty'>{project.description || 'No description available'}</p>
         </div>
         <div className='mt-2'></div>
-        {project.homepage ? (
+        {project.homepage_url ? (
           <a
             title='A live page link to this project'
-            href={project.homepage}
+            href={project.homepage_url}
             target='_blank'
             rel='noopener noreferrer'
             className='text-neutral-500 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 transition duration-200 ease-in-out'
