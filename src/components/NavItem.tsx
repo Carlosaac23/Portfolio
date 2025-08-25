@@ -1,7 +1,7 @@
 'use client';
 
-import { Link } from 'next-view-transitions';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 interface NavItemProps {
   path: string;
@@ -14,11 +14,9 @@ export function NavItem({ path, title }: NavItemProps) {
 
   return (
     <Link
-      href={path}
+      href={{ pathname: path }}
       prefetch
-      className={`hover:text-neutral-950 duration-200 ease-in-out dark:hover:text-neutral-50 ${
-        isActive ? 'text-neutral-950 dark:text-neutral-50 font-semibold' : ''
-      }`}
+      className={`hover:text-neutral-950 dark:hover:text-neutral-50 ${isActive ? 'text-neutral-950 dark:text-neutral-50 font-semibold' : ''}`}
     >
       {title}
     </Link>
