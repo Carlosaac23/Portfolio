@@ -8,7 +8,7 @@ export default function Footer() {
         href='https://x.com/Carlosaac23'
         target='_blank'
         rel='noopener noreferrer'
-        className='hover:text-neutral-950 text-sm transition-colors duration-200 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-50'
+        className='hover:text-neutral-950 text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
       >
         Twitter/X
       </a>
@@ -17,7 +17,7 @@ export default function Footer() {
         href='https://github.com/Carlosaac23'
         target='_blank'
         rel='noopener noreferrer'
-        className='hover:text-neutral-950 text-sm transition-colors duration-200 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-50'
+        className='hover:text-neutral-950 text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
       >
         GitHub
       </a>
@@ -26,14 +26,14 @@ export default function Footer() {
         href='https://www.linkedin.com/in/carlos-acosta-7aa448263/'
         target='_blank'
         rel='noopener noreferrer'
-        className='hover:text-neutral-950 text-sm transition-colors duration-200 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-50'
+        className='hover:text-neutral-950 text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
       >
         LinkedIn
       </a>
       <a
         title='A link to send me an email'
         href='mailto:carlosaac232001@gmail.com'
-        className='hover:text-neutral-950 text-sm transition-colors duration-200 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-50'
+        className='hover:text-neutral-950 text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
       >
         Email
       </a>
