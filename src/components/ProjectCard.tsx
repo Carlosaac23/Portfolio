@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       key={project.name}
-      className='flex flex-col p-3 justify-between bg-neutral-50 border border-neutral-300 rounded-md max-h-44 hover:border-neutral-400 max-sm:w-auto shadow-sm dark:bg-neutral-950 dark:border-neutral-800 dark:hover:border-neutral-600'
+      className='flex flex-col p-3 justify-between bg-neutral-50 border border-neutral-300 rounded-md max-h-44 hover:border-neutral-400 max-sm:w-auto shadow-xs dark:bg-neutral-950 dark:border-neutral-800 dark:hover:border-neutral-600'
     >
       <div className='text-left'>
         <h2 className='text-neutral-950 dark:text-neutral-50 text-lg'>{project.name}</h2>
@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={project.homepage_url}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-neutral-500 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
+            className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline'
           >
             {'View website'}
           </a>
@@ -42,14 +42,14 @@ export default function ProjectCard({ project }: { project: Project }) {
           href={project.repo_url}
           target='_blank'
           rel='noopener noreferrer'
-          className='text-neutral-500 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
+          className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline'
         >
           {'View on GitHub'}
         </a>
       </div>
       <ul className='flex flex-wrap gap-2 mt-2 py-0.5 overflow-y-auto'>
         {project.stack.map(t => (
-          <li key={t} className='px-2 py-1 bg-neutral-50 dark:bg-neutral-950 rounded-sm text-xs border border-neutral-300 shadow-sm dark:border-neutral-700'>
+          <li key={t} className='px-2 py-1 bg-neutral-50 dark:bg-neutral-950 rounded-sm text-xs border border-neutral-300 shadow-xs dark:border-neutral-700'>
             {t}
           </li>
         ))}
