@@ -1,6 +1,6 @@
+import type { Project } from '@/components/ProjectCard';
 import ProjectCard from '@/components/ProjectCard';
 import projects from '../../../data/projects.json';
-import type { Project } from '@/components/ProjectCard';
 
 export default async function ProjectsPage() {
   return (
