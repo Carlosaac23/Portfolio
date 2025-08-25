@@ -8,7 +8,7 @@ export default async function ProjectsPage() {
       {projects.length > 0 ? (
         <>
           <p className='text-left'>These are my projects. Feel free to check them.</p>
-          <div className='grid md:grid-cols-[1fr_1fr] gap-5 text-sm max-sm:justify-center'>
+          <div className='grid md:grid-cols-[1fr_1fr] p-1 gap-5 text-sm max-sm:justify-center'>
             {projects.map((project: Project) => (
               <ProjectCard key={project.name} project={project} />
             ))}
