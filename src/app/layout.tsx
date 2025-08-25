@@ -1,12 +1,12 @@
-import './globals.css';
-import type { ReactNode } from 'react';
 import { GeistSans } from 'geist/font/sans';
-import { ViewTransitions } from 'next-view-transitions';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { unstable_ViewTransition as ViewTransition } from 'react';
+import type { ReactNode } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import './globals.css';
 
 export const metadata = {
   title: 'Carlos Acosta',
@@ -42,7 +42,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <ViewTransitions>
+    <ViewTransition>
       <html lang='en' suppressHydrationWarning>
         <body className={`${GeistSans.className} bg-neutral-50 dark:bg-neutral-950`}>
           <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
@@ -54,6 +54,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </ThemeProvider>
         </body>
       </html>
-    </ViewTransitions>
+    </ViewTransition>
   );
 }
