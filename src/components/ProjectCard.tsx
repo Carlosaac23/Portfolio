@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={homepage_url}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline'
+            className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline hover:underline-offset-2'
           >
             {'View website'}
           </a>
@@ -44,7 +44,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           href={repo_url}
           target='_blank'
           rel='noopener noreferrer'
-          className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline'
+          className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50 hover:underline hover:underline-offset-2'
         >
           {'View on GitHub'}
         </a>
