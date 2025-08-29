@@ -11,7 +11,7 @@
     "repo_url": "https://github.com/Carlosaac23/Porsche-Page",
     "homepage_url": "https://porsche-page.vercel.app/",
     "description": "A dynamic web about Porsche using React, Motion, Tailwind and TS. I made it based on simplicity and velocity.",
-    "stack": ["React", "Typescript", "Bun", "Motion", "Swiper", "Tailwind"]
+    "stack": ["React", "Typescript", "Bun", "Motion", "Swiper", "Tailwind", "React-Router"]
   },
   {
     "name": "Password Generator",
