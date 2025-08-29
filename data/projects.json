@@ -4,27 +4,13 @@
     "repo_url": "https://github.com/Carlosaac23/portfolio",
     "homepage_url": "https://portfolio-steel-kappa-78.vercel.app/",
     "description": "My portfolio was created using Next.js, TS, Tailwind, next-view-transitions and inspired by Vercel.",
-    "stack": ["Next.js", "Tailwind", "Vercel", "Typescript"]
+    "stack": ["Next.js", "Tailwind", "Vercel", "Typescript", "Shadcn"]
   },
   {
     "name": "Porsche Page",
     "repo_url": "https://github.com/Carlosaac23/Porsche-Page",
     "homepage_url": "https://porsche-page.vercel.app/",
     "description": "A dynamic web about Porsche using React, Motion, Tailwind and TS. I made it based on simplicity and velocity.",
-    "stack": ["React", "Typescript", "Bun", "Motion", "Swiper", "Tailwind", "React-Router"]
-  },
-  {
-    "name": "Password Generator",
-    "repo_url": "https://github.com/Carlosaac23/Password-Generator",
-    "homepage_url": "https://password-generator-xi-one.vercel.app/",
-    "description": "A simple password generator.",
-    "stack": ["Javascript", "HTML", "CSS"]
-  },
-  {
-    "name": "Veterinary Appointments",
-    "repo_url": "https://github.com/Carlosaac23/Veterinary-Appointments",
-    "homepage_url": "https://veterinary-appointments.vercel.app/",
-    "description": "Veterinary Appointment Manager.",
-    "stack": ["Javascript", "HTML", "CSS"]
+    "stack": ["React", "Typescript", "Tailwind", "Bun", "Swiper", "React-Router"]
   }
 ]
