@@ -1,5 +1,4 @@
 'use client';
-
 export interface Project {
   name: string;
   repo_url: string;
