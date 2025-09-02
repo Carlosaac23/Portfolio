@@ -16,8 +16,10 @@ export default function ProjectsPage() {
     <section className='flex flex-col gap-10 text-neutral-950 dark:text-neutral-50'>
       {projects.length > 0 ? (
         <>
-          <p className='text-left'>These are my projects. Feel free to check them.</p>
-          <div className='grid sm:grid-cols-[1fr_1fr] gap-5 text-sm'>
+          <p className='text-left'>
+            These are my projects. Feel free to check them.
+          </p>
+          <div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
             {displayedProjects.map((project: Project) => (
               <ProjectCard key={project.name} project={project} />
             ))}
@@ -25,14 +27,20 @@ export default function ProjectsPage() {
 
           {hasMoreProjects && (
             <div className='flex justify-center'>
-              <Button variant='outline' onClick={() => setShowAll(!showAll)} className='px-6 py-2 cursor-pointer'>
-                {showAll ? 'Show less' : `Show more (${projects.length - 4} more)`}
+              <Button
+                variant='outline'
+                onClick={() => setShowAll(!showAll)}
+                className='cursor-pointer px-6 py-2'
+              >
+                {showAll
+                  ? 'Show less'
+                  : `Show more (${projects.length - 4} more)`}
               </Button>
             </div>
           )}
         </>
       ) : (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center justify-center'>
           <p className='text-base'>There are no projects.</p>
         </div>
       )}

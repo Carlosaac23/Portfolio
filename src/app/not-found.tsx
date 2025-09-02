@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className='h-[40rem] flex flex-col justify-center items-center'>
-      <h1 className='text-7xl font-bold mb-2'>404</h1>
-      <p className='text-xl tracking-wider mb-4'>Page Not Found</p>
+    <div className='flex h-[40rem] flex-col items-center justify-center'>
+      <h1 className='mb-2 text-7xl font-bold'>404</h1>
+      <p className='mb-4 text-xl tracking-wider'>Page Not Found</p>
       <Link className='hover:underline hover:underline-offset-2' href={'/'}>
         Go back home
       </Link>
