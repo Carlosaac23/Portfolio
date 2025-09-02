@@ -10,7 +10,7 @@
     "name": "Porsche Page",
     "repo_url": "https://github.com/Carlosaac23/Porsche-Page",
     "homepage_url": "https://porsche-page.vercel.app/",
-    "description": "A dynamic web about Porsche using React, Motion, Tailwind and TS. I made it based on simplicity and velocity.",
-    "stack": ["React", "Typescript", "Tailwind", "Bun", "Swiper", "React-Router"]
+    "description": "A dynamic web about Porsche using Vite, Swiper, Tailwind and TS. I made it based on simplicity and velocity.",
+    "stack": ["Vite", "Typescript", "Tailwind", "Bun", "Swiper", "React-Router"]
   }
 ]
