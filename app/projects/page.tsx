@@ -1,10 +1,10 @@
 'use client';
 
-import type { Project } from '../../components/ProjectCard';
+import type { Project } from '@/components/ProjectCard';
 import { useState } from 'react';
-import { Button } from '../../components/ui/button';
-import ProjectCard from '../../components/ProjectCard';
-import projects from '../../data/projects.json';
+import { Button } from '@/components/ui/button';
+import ProjectCard from '@/components/ProjectCard';
+import projects from '@/data/projects.json';
 
 export default function ProjectsPage() {
   const [showAll, setShowAll] = useState(false);

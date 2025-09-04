@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { NavItem } from './NavItem';
 import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
@@ -31,9 +31,9 @@ export default function NavBar() {
 
   return (
     <div className='mb-16 flex items-center justify-between'>
-      <div>
+      <nav>
         <ul>
-          <li className='flex gap-6 text-lg text-neutral-500 dark:text-neutral-400'>
+          <li className='flex gap-1 text-lg text-neutral-500 dark:text-neutral-400'>
             {navLinks.map((nav) => {
               return (
                 <NavItem
@@ -45,7 +45,7 @@ export default function NavBar() {
             })}
           </li>
         </ul>
-      </div>
+      </nav>
 
       <div className='flex'>
         <div className='mr-2'>
