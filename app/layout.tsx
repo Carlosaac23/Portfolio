@@ -2,7 +2,6 @@ import { GeistSans } from 'geist/font/sans';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { unstable_ViewTransition as ViewTransition } from 'react';
 import type { ReactNode } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
