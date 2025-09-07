@@ -12,5 +12,12 @@
     "homepage_url": "https://porsche-page.vercel.app/",
     "description": "A dynamic web about Porsche using Vite, Swiper, Tailwind and TS. I made it based on simplicity and velocity.",
     "stack": ["Vite", "Typescript", "Tailwind", "Bun", "Swiper", "React-Router"]
+  },
+  {
+    "name": "Stoic API",
+    "repo_url": "https://github.com/Carlosaac23/Stoic-API",
+    "homepage_url": "https://stoic-api-red.vercel.app/",
+    "description": "A basic API REST that gives you a bunch of stoic quotes from the most famous stoics that have lived.",
+    "stack": ["Next.js", "Typescript", "Tailwind", "Vercel"]
   }
 ]
