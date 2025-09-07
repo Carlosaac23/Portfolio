@@ -1,11 +1,11 @@
 'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { NavItem } from './NavItem';
 import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
 import { Moon, Sun } from 'lucide-react';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function NavBar() {
   const { theme, setTheme } = useTheme();
@@ -59,13 +59,13 @@ export default function NavBar() {
           </Button>
         </div>
 
-        <Avatar className='shadow-sm'>
-          <AvatarImage
-            src='https://github.com/Carlosaac23.png'
-            alt='@Carlosaac23'
-          />
-          <AvatarFallback>CA</AvatarFallback>
-        </Avatar>
+        <Image
+          className='rounded-full'
+          src='https://github.com/Carlosaac23.png'
+          width={36}
+          height={36}
+          alt='Github Profile photo'
+        />
       </div>
     </div>
   );
