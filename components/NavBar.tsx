@@ -33,7 +33,7 @@ export default function NavBar() {
     <div className='mb-16 flex items-center justify-between'>
       <nav>
         <ul>
-          <li className='flex gap-1 text-lg text-neutral-500 dark:text-neutral-400'>
+          <li className='flex gap-4 text-lg text-neutral-500 dark:text-neutral-400'>
             {navLinks.map((nav) => {
               return (
                 <NavItem

@@ -16,7 +16,7 @@ export function NavItem({ path, title }: NavItemProps) {
     <Link
       href={{ pathname: path }}
       prefetch
-      className={`hover:text-neutral-95 gap-4 dark:hover:text-neutral-50 ${isActive ? 'text-neutral-950 dark:text-neutral-50' : ''}`}
+      className={`gap-4 hover:text-neutral-950 dark:hover:text-neutral-50 ${isActive ? 'font-medium text-neutral-950 dark:text-neutral-50' : ''}`}
     >
       {title}
     </Link>
