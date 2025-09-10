@@ -30,20 +30,14 @@ export default function NavBar() {
   ];
 
   return (
-    <div className='mb-16 flex items-center justify-between'>
-      <nav>
-        <ul>
-          <li className='flex gap-4 text-lg text-neutral-500 dark:text-neutral-400'>
-            {navLinks.map((nav) => {
-              return (
-                <NavItem
-                  key={nav.path}
-                  path={nav.path}
-                  title={nav.title}
-                ></NavItem>
-              );
-            })}
-          </li>
+    <header className='mb-16 flex items-center justify-between'>
+      <nav aria-label='Main navigation'>
+        <ul className='flex gap-4 text-lg text-neutral-500 dark:text-neutral-400'>
+          {navLinks.map((nav) => (
+            <li key={nav.path}>
+              <NavItem path={nav.path} title={nav.title} />
+            </li>
+          ))}
         </ul>
       </nav>
 
@@ -67,6 +61,6 @@ export default function NavBar() {
           alt='Github Profile photo'
         />
       </div>
-    </div>
+    </header>
   );
 }
