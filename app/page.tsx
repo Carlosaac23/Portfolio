@@ -2,7 +2,7 @@ import Balancer from 'react-wrap-balancer';
 
 export default function HomePage() {
   return (
-    <div className='flex flex-col gap-10 text-neutral-600 dark:text-neutral-50'>
+    <main className='flex flex-col gap-10 text-neutral-600 dark:text-neutral-50'>
       <h1 className='text-left text-2xl text-neutral-950 dark:text-neutral-50'>
         Carlos Acosta
       </h1>
@@ -45,6 +45,6 @@ export default function HomePage() {
           this incredible world of technology.
         </Balancer>
       </p>
-    </div>
+    </main>
   );
 }
