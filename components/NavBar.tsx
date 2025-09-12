@@ -27,12 +27,13 @@ export default function NavBar() {
   const navLinks = [
     { title: 'Home', path: '/' },
     { title: 'Projects', path: '/projects' },
+    { title: 'Writing', path: '/writing' },
   ];
 
   return (
     <header className='mb-16 flex items-center justify-between'>
       <nav aria-label='Main navigation'>
-        <ul className='flex gap-4 text-lg text-neutral-500 dark:text-neutral-400'>
+        <ul className='flex gap-5 text-lg text-neutral-500 dark:text-neutral-400'>
           {navLinks.map((nav) => (
             <li key={nav.path}>
               <NavItem path={nav.path} title={nav.title} />
