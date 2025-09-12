@@ -1,14 +1,23 @@
 'use client';
 export interface Project {
   name: string;
-  repo_url: string;
-  homepage_url: string;
+  html_url: string;
+  homepage: string;
   description: string;
-  stack: string[];
+  topics: string[];
+  fork: boolean;
+  stargazers_count: number;
+}
+
+function capitalize(word: string): string {
+  return word
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+    .join('-');
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const { name, repo_url, homepage_url, description, stack } = project;
+  const { name, html_url, homepage, description, topics } = project;
 
   return (
     <div
@@ -25,10 +34,10 @@ export default function ProjectCard({ project }: { project: Project }) {
           </p>
         </div>
         <div className='mt-2'></div>
-        {homepage_url ? (
+        {homepage ? (
           <a
             title='A live page link to this project'
-            href={homepage_url}
+            href={homepage}
             target='_blank'
             rel='noopener noreferrer'
             className='text-sm text-neutral-600 hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
@@ -44,7 +53,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         <a
           title='A repository link to this project'
-          href={repo_url}
+          href={html_url}
           target='_blank'
           rel='noopener noreferrer'
           className='text-sm text-neutral-600 hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
@@ -53,12 +62,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         </a>
       </div>
       <ul className='mt-2 flex flex-wrap gap-2 overflow-y-auto py-0.5'>
-        {stack.map((t) => (
+        {topics.map((topic) => (
           <li
-            key={t}
+            key={topic}
             className='rounded-sm border border-neutral-300 bg-neutral-50 px-2 py-1 text-xs shadow-xs dark:border-neutral-700 dark:bg-neutral-950'
           >
-            {t}
+            {capitalize(topic)}
           </li>
         ))}
       </ul>
