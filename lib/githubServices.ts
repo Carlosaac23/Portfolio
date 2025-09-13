@@ -1,3 +1,5 @@
+'use server';
+
 import type { Project } from '@/components/ProjectCard';
 
 export default async function getProjects(): Promise<Project[]> {
@@ -11,7 +13,7 @@ export default async function getProjects(): Promise<Project[]> {
         Accept: 'application/vnd.github.v3+json',
       },
       next: {
-        revalidate: 3600,
+        revalidate: 1800,
       },
     });
 
