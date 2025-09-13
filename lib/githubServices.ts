@@ -1,7 +1,7 @@
 import type { Project } from '@/components/ProjectCard';
 
 export default async function getProjects(): Promise<Project[]> {
-  const url = process.env.GITHUB_API_URL as string;
+  const url = 'https://api.github.com/users/carlosaac23/repos';
   const token = process.env.GITHUB_TOKEN;
 
   try {
