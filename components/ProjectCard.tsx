@@ -61,7 +61,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {'View on GitHub'}
         </a>
       </div>
-      <ul className='mt-2 flex max-h-9 flex-wrap gap-2 overflow-y-auto py-0.5'>
+      <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5'>
         {topics.map((topic) => (
           <li
             key={topic}
