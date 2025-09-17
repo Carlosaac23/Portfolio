@@ -42,17 +42,23 @@ export default function NavBar() {
         </ul>
       </nav>
 
-      <div className='flex'>
-        <div className='mr-2'>
-          <Button
-            variant='ghost'
-            size='icon'
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            aria-label='Toggle theme'
-          >
-            {theme === 'dark' ? <Sun /> : <Moon />}
-          </Button>
+      <div className='flex items-center'>
+        <div
+          title='T shortcut'
+          className='hidden rounded-sm border border-neutral-300 px-2 inset-shadow-sm lg:block dark:border-neutral-800'
+        >
+          t
         </div>
+
+        <Button
+          className='mr-2'
+          variant='ghost'
+          size='icon'
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          aria-label='Toggle theme'
+        >
+          {theme === 'dark' ? <Sun /> : <Moon />}
+        </Button>
 
         <Image
           className='rounded-full'
