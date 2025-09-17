@@ -45,9 +45,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang='en' suppressHydrationWarning>
       <ViewTransition>
         <body
-          className={`${GeistSans.className} bg-neutral-50 dark:bg-neutral-950`}
+          className={`${GeistSans.className} bg-neutral-50 transition-all duration-200 dark:bg-neutral-950`}
         >
-          <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+          <ThemeProvider attribute='class' enableSystem>
             <NavBar />
             <main>{children}</main>
             <Analytics />
