@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       key={name}
-      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 bg-neutral-50 p-3 shadow-xs hover:border-neutral-400 max-sm:w-auto dark:border-neutral-800 dark:bg-neutral-950 dark:hover:border-neutral-600'
+      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 bg-neutral-50 p-3 shadow-xs transition-all duration-200 hover:border-neutral-400 max-sm:w-auto dark:border-neutral-800 dark:bg-neutral-950 dark:hover:border-neutral-600'
     >
       <div className='text-left'>
         <h2 className='text-lg text-neutral-950 dark:text-neutral-50'>
@@ -65,7 +65,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {topics.map((topic) => (
           <li
             key={topic}
-            className='rounded-sm border border-neutral-300 bg-neutral-50 px-2 py-1 text-xs shadow-xs dark:border-neutral-700 dark:bg-neutral-950'
+            className='rounded-sm border border-neutral-300 bg-neutral-50 px-2 py-1 text-xs shadow-xs transition-all duration-200 dark:border-neutral-700 dark:bg-neutral-950'
           >
             {capitalize(topic)}
           </li>
