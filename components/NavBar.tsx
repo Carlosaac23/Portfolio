@@ -45,9 +45,9 @@ export default function NavBar() {
       <div className='flex items-center'>
         <div
           title='T shortcut'
-          className='hidden rounded-sm border border-neutral-300 px-2 inset-shadow-sm lg:block dark:border-neutral-800'
+          className='hidden h-6 w-6 items-center justify-center rounded-sm border border-neutral-300 inset-shadow-sm transition-all duration-200 lg:flex dark:border-neutral-800'
         >
-          t
+          <p>t</p>
         </div>
 
         <Button
