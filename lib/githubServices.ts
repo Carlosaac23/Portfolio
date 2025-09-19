@@ -4,12 +4,12 @@ import type { Project } from '@/components/ProjectCard';
 
 export default async function getProjects(): Promise<Project[]> {
   const url = 'https://api.github.com/users/carlosaac23/repos';
-  const token = process.env.GITHUB_TOKEN;
+  const { GITHUB_TOKEN } = process.env;
 
   try {
     const res = await fetch(url, {
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
         Accept: 'application/vnd.github.v3+json',
       },
       next: {
