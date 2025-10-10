@@ -20,6 +20,22 @@
       "suspicious": {
         "noUnknownAtRules": "off",
         "noConsole": "off"
+      },
+      "nursery": {
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "interface"
+          }
+        }
+      },
+      "style": {
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case", "PascalCase"]
+          }
+        }
       }
     }
   },
