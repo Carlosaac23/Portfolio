@@ -44,28 +44,28 @@ export default function NavBar() {
 
 			<div className='flex items-center'>
 				<div
+					className='inset-shadow-sm hidden h-6 w-6 items-center justify-center rounded-sm border border-neutral-300 transition-all duration-200 lg:flex dark:border-neutral-800'
 					title='T shortcut'
-					className='hidden h-6 w-6 items-center justify-center rounded-sm border border-neutral-300 inset-shadow-sm transition-all duration-200 lg:flex dark:border-neutral-800'
 				>
 					<p>t</p>
 				</div>
 
 				<Button
-					className='mr-2'
-					variant='ghost'
-					size='icon'
-					onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 					aria-label='Toggle theme'
+					className='mr-2'
+					onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+					size='icon'
+					variant='ghost'
 				>
 					{theme === 'dark' ? <Sun /> : <Moon />}
 				</Button>
 
 				<Image
+					alt='Github Profile photo'
 					className='rounded-full'
+					height={36}
 					src='https://github.com/Carlosaac23.png'
 					width={36}
-					height={36}
-					alt='Github Profile photo'
 				/>
 			</div>
 		</header>
