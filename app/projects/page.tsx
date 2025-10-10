@@ -1,5 +1,5 @@
 import ProjectCard from '@/components/ProjectCard';
-import getProjects from '@/lib/githubServices';
+import getProjects from '@/lib/github-services';
 
 export default async function ProjectsPage() {
 	const projects = await getProjects();
