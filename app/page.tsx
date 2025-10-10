@@ -10,19 +10,19 @@ export default function HomePage() {
 				<Balancer>
 					I am a{' '}
 					<a
-						href='https://zajuna.sena.edu.co/pdfs/titulada/tecgnologias/analisis_desarrollo_software.pdf'
-						target='_blank'
-						rel='noopener noreferrer'
 						className='font-bold text-neutral-950 dark:text-neutral-50'
+						href='https://zajuna.sena.edu.co/pdfs/titulada/tecgnologias/analisis_desarrollo_software.pdf'
+						rel='noopener noreferrer'
+						target='_blank'
 					>
 						software analysis and development
 					</a>{' '}
 					student at{' '}
 					<a
-						href='https://www.sena.edu.co/es-co/Paginas/default.aspx'
-						target='_blank'
-						rel='noopener noreferrer'
 						className='font-bold text-neutral-950 dark:text-neutral-50'
+						href='https://www.sena.edu.co/es-co/Paginas/default.aspx'
+						rel='noopener noreferrer'
+						target='_blank'
 					>
 						SENA,
 					</a>{' '}
@@ -33,10 +33,10 @@ export default function HomePage() {
 					</em>{' '}
 					for{' '}
 					<a
-						href='https://www.vercel.com'
-						target='_blank'
-						rel='noopener noreferrer'
 						className='font-bold text-neutral-950 dark:text-neutral-50'
+						href='https://www.vercel.com'
+						rel='noopener noreferrer'
+						target='_blank'
 					>
 						Vercel
 					</a>{' '}
