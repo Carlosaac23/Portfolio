@@ -1,50 +1,42 @@
 import Balancer from 'react-wrap-balancer';
+import ProjectCard from '@/components/ProjectCard';
+import getProjects from '@/lib/github-services';
 
-export default function HomePage() {
+export default async function HomePage() {
+	const projects = await getProjects();
+
 	return (
-		<main className='flex flex-col gap-10 text-neutral-600 dark:text-neutral-50'>
-			<h1 className='text-left text-2xl text-neutral-950 dark:text-neutral-50'>
+		<main className='flex flex-col gap-6 text-neutral-700 dark:text-neutral-50'>
+			<h1 className='font-bold text-2xl text-neutral-950 dark:text-neutral-50'>
 				Carlos Acosta
 			</h1>
-			<p className='text-left max-sm:leading-loose'>
+			<p className='max-sm:leading-loose'>
 				<Balancer>
-					I am a{' '}
-					<a
-						className='font-bold text-neutral-950 dark:text-neutral-50'
-						href='https://zajuna.sena.edu.co/pdfs/titulada/tecgnologias/analisis_desarrollo_software.pdf'
-						rel='noopener noreferrer'
-						target='_blank'
-					>
-						software analysis and development
-					</a>{' '}
-					student at{' '}
-					<a
-						className='font-bold text-neutral-950 dark:text-neutral-50'
-						href='https://www.sena.edu.co/es-co/Paginas/default.aspx'
-						rel='noopener noreferrer'
-						target='_blank'
-					>
-						SENA,
-					</a>{' '}
-					and I love the tech industry. I&apos;m learning and creating projects
-					to improve my skills and enter the tech world. I have a{' '}
-					<em className='font-semibold text-neutral-950 dark:text-neutral-50'>
-						special taste
-					</em>{' '}
-					for{' '}
-					<a
-						className='font-bold text-neutral-950 dark:text-neutral-50'
-						href='https://www.vercel.com'
-						rel='noopener noreferrer'
-						target='_blank'
-					>
-						Vercel
-					</a>{' '}
-					products, and it&apos;s a great motivation for me. I&apos;m excited to
-					continue growing, facing new challenges, and learning more daily in
-					this incredible world of technology.
+					I&apos;m a Full Stack Developer focused on the{' '}
+					<strong>backend</strong> and a passionate tech enthusiast. I&apos;m
+					constantly learning and building projects to sharpen my skills and
+					grow as a professional. I&apos;m excited to keep evolving, tackling
+					new challenges, and expanding my knowledge every day in this amazing
+					world of technology.
 				</Balancer>
 			</p>
+
+			<section className='flex flex-col gap-6 text-neutral-950 dark:text-neutral-50'>
+				{projects.length > 0 ? (
+					<>
+						<h2 className='font-bold text-xl'>Projects</h2>
+						<div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
+							{projects.map((project) => (
+								<ProjectCard key={project.name} project={project} />
+							))}
+						</div>
+					</>
+				) : (
+					<div className='flex flex-col items-center justify-center'>
+						<p className='text-base'>There are no projects</p>
+					</div>
+				)}
+			</section>
 		</main>
 	);
 }
