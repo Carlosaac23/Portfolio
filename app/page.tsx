@@ -11,7 +11,7 @@ export default async function HomePage() {
 			<h1 className='mb-3 font-bold text-2xl text-neutral-950 dark:text-neutral-50'>
 				Carlos Acosta
 			</h1>
-			<p className='mb-1 max-sm:leading-loose lg:mb-2'>
+			<p className='mb-1 leading-loose lg:mb-2'>
 				<Balancer>
 					I&apos;m a Full Stack Developer focused on the{' '}
 					<strong>backend</strong> and a passionate tech enthusiast. I&apos;m
