@@ -54,6 +54,7 @@ export default function NavBar() {
 					className='mr-2'
 					onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 					size='icon'
+					suppressHydrationWarning
 					variant='ghost'
 				>
 					{theme === 'dark' ? <Sun /> : <Moon />}
