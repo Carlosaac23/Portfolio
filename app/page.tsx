@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { SquareArrowOutUpRight } from 'lucide-react';
 import Balancer from 'react-wrap-balancer';
 import ProjectCard from '@/components/ProjectCard';
 import getProjects from '@/lib/github-services';
@@ -24,45 +24,53 @@ export default async function HomePage() {
 
 			<div className='mb-6 flex gap-2 lg:gap-4'>
 				<a
-					className='flex items-center text-neutral-600 text-sm hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
+					className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
 					href='https://x.com/Carlosaac23'
 					rel='noopener noreferrer'
 					target='_blank'
 					title='A link to my GitHub'
 				>
-					<span>X</span>
-					<ArrowUpRight size={14} />
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+						X
+						<SquareArrowOutUpRight size={13} />
+					</span>
 				</a>
 
 				<a
-					className='flex items-center text-neutral-600 text-sm hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
+					className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
 					href='https://github.com/Carlosaac23'
 					rel='noopener noreferrer'
 					target='_blank'
 					title='A link to my GitHub'
 				>
-					<span> GitHub</span>
-					<ArrowUpRight size={14} />
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+						GitHub
+						<SquareArrowOutUpRight size={13} />
+					</span>
 				</a>
 
 				<a
-					className='flex items-center text-neutral-600 text-sm hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
+					className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
 					href='https://www.linkedin.com/in/carlos-acosta-7aa448263/'
 					rel='noopener noreferrer'
 					target='_blank'
 					title='A link to my Linkedin'
 				>
-					<span>LinkedIn</span>
-					<ArrowUpRight size={14} />
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+						LinkedIn
+						<SquareArrowOutUpRight size={13} />
+					</span>
 				</a>
 
 				<a
-					className='flex items-center text-neutral-600 text-sm hover:text-neutral-950 hover:underline hover:underline-offset-2 dark:text-neutral-400 dark:hover:text-neutral-50'
+					className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
 					href='mailto:carlosaac232001@gmail.com'
 					title='A link to send me an email'
 				>
-					<span>Email</span>
-					<ArrowUpRight size={14} />
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+						Email
+						<SquareArrowOutUpRight size={13} />
+					</span>
 				</a>
 			</div>
 
