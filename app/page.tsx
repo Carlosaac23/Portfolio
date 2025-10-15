@@ -22,7 +22,7 @@ export default async function HomePage() {
 				</Balancer>
 			</p>
 
-			<div className='mb-6 flex gap-2 lg:gap-4'>
+			<div className='mb-6 flex gap-3 lg:gap-4'>
 				<a
 					className='text-neutral-600 text-sm hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
 					href='https://x.com/Carlosaac23'
@@ -30,7 +30,7 @@ export default async function HomePage() {
 					target='_blank'
 					title='A link to my GitHub'
 				>
-					<span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
 						X
 						<SquareArrowOutUpRight size={13} />
 					</span>
@@ -43,7 +43,7 @@ export default async function HomePage() {
 					target='_blank'
 					title='A link to my GitHub'
 				>
-					<span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
 						GitHub
 						<SquareArrowOutUpRight size={13} />
 					</span>
@@ -56,7 +56,7 @@ export default async function HomePage() {
 					target='_blank'
 					title='A link to my Linkedin'
 				>
-					<span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
 						LinkedIn
 						<SquareArrowOutUpRight size={13} />
 					</span>
@@ -67,7 +67,7 @@ export default async function HomePage() {
 					href='mailto:carlosaac232001@gmail.com'
 					title='A link to send me an email'
 				>
-					<span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
+					<span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
 						Email
 						<SquareArrowOutUpRight size={13} />
 					</span>
