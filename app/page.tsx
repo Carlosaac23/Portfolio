@@ -13,7 +13,7 @@ export default async function HomePage() {
 			</h1>
 			<p className='mb-1 leading-loose lg:mb-2'>
 				<Balancer>
-					I&apos;m a Full Stack Developer focused on the{' '}
+					I&apos;m a self-taught Full Stack Developer focused on the{' '}
 					<strong>backend</strong> and a passionate tech enthusiast. I&apos;m
 					constantly learning and building projects to sharpen my skills and
 					grow as a professional. I&apos;m excited to keep evolving, tackling
