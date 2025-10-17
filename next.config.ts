@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [new URL('https://github.com/Carlosaac23.png')],
+  },
+  experimental: {
+    viewTransition: true,
+  },
 };
 
 export default nextConfig;
