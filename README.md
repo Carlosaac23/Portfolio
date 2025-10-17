@@ -1,17 +1,36 @@
-# Carlos Acosta – Portfolio Personal
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Este es mi portafolio personal, desarrollado para mostrar mi perfil profesional, formación y los proyectos que he creado.
+## Getting Started
 
-![Screenshot of my portfolio](./public/cap.png)
+First, run the development server:
 
-## Sobre el portafolio
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Construí esta plataforma utilizando **Next.js** y **React** con TypeScript, priorizando buenas prácticas de componentes reutilizables, temas claro/oscuro y una excelente experiencia en dispositivos móviles y de escritorio. El diseño integra la fuente **Geist**, TailwindCSS para los estilos y librerías UI modernas como Radix UI. Todo el código está estructurado para ser fácil de mantener y escalar.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-En la sección de proyectos, se muestran automáticamente mis principales repositorios con enlace a los sitios en producción y al código fuente. Logro esto consumiendo la API de GitHub y presentando cada proyecto en tarjetas interactivas.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-También incorporé metaetiquetas, favicon y soporte para SEO y visualización en redes sociales, asegurando una presencia profesional en la web.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Sobre mí
+## Learn More
 
-Soy Carlos Acosta, estudiante de análisis y desarrollo de software en [SENA](https://www.sena.edu.co/es-co/Paginas/default.aspx). Me apasiona la tecnología, aprender y construir nuevas soluciones. Puedes contactarme mediante [GitHub](https://github.com/Carlosaac23), [LinkedIn](https://www.linkedin.com/in/carlos-acosta-7aa448263/), [Twitter/X](https://x.com/Carlosaac23) o por [email](mailto:carlosaac232001@gmail.com).
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,8 +1,8 @@
 'use client';
 
 import { Moon, Sun } from 'lucide-react';
-import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { NavItem } from './NavItem';
 import { Button } from './ui/button';
