@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className='mt-2' />
         {homepage ? (
           <a
-            className='text-sm text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
+            className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
             href={homepage}
             rel='noopener noreferrer'
             target='_blank'
@@ -58,7 +58,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <span className='mx-2 text-neutral-600 dark:text-neutral-400'>|</span>
 
         <a
-          className='text-sm text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-50'
+          className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
           href={html_url}
           rel='noopener noreferrer'
           target='_blank'
@@ -70,7 +70,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </span>
         </a>
       </div>
-      <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5'>
+      <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5 pr-2'>
         {topics.map((topic) => (
           <li
             className='rounded-sm border border-neutral-300 bg-neutral-50 px-2 py-1 text-xs shadow-xs transition-all duration-200 dark:border-neutral-700 dark:bg-neutral-950'
