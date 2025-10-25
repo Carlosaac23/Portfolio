@@ -3,6 +3,8 @@
 import type { Project } from '@/components/ProjectCard';
 
 export default async function getProjects(): Promise<Project[]> {
+  'use cache';
+
   const url = 'https://api.github.com/users/carlosaac23/repos';
   const { GITHUB_TOKEN } = process.env;
 
@@ -11,9 +13,6 @@ export default async function getProjects(): Promise<Project[]> {
       headers: {
         Authorization: `Bearer ${GITHUB_TOKEN}`,
         Accept: 'application/vnd.github.v3+json',
-      },
-      next: {
-        revalidate: 1800,
       },
     });
 
