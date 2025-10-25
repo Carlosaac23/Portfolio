@@ -77,7 +77,7 @@ export default async function HomePage() {
       <section className='flex flex-col gap-6 text-neutral-950 dark:text-neutral-50'>
         {projects.length > 0 ? (
           <>
-            <h2 className='text-xl font-bold'>Projects</h2>
+            <h2 className='text-xl font-bold tracking-wide'>Projects</h2>
             <div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
               {projects.map((project) => (
                 <ProjectCard key={project.name} project={project} />
