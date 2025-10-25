@@ -51,24 +51,28 @@ export default function ProjectCard({ project }: { project: Project }) {
             </span>
           </a>
         ) : (
-          <span className='text-gray-400'>{"Don't have website"}</span>
+          <span className='text-gray-400'>Don&apos;t have website</span>
         )}
 
         {/* Es una línea que separa ambos links */}
         <span className='mx-2 text-neutral-600 dark:text-neutral-400'>|</span>
 
-        <a
-          className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
-          href={html_url}
-          rel='noopener noreferrer'
-          target='_blank'
-          title='A repository link to this project'
-        >
-          <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
-            {'View on GitHub'}
-            <SquareArrowOutUpRight size={13} />
-          </span>
-        </a>
+        {html_url ? (
+          <a
+            className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
+            href={html_url}
+            rel='noopener noreferrer'
+            target='_blank'
+            title='A repository link to this project'
+          >
+            <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+              {'View on GitHub'}
+              <SquareArrowOutUpRight size={13} />
+            </span>
+          </a>
+        ) : (
+          <span className='text-gray-400'>Don&apos;t have repo</span>
+        )}
       </div>
       <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5 pr-2'>
         {topics.map((topic) => (
