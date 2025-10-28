@@ -6,7 +6,7 @@ export default async function getProjects(): Promise<Project[]> {
   'use cache';
 
   const url = 'https://api.github.com/users/carlosaac23/repos';
-  const { GITHUB_TOKEN } = process.env;
+  const { GITHUB_TOKEN } = Bun.env;
 
   try {
     const res = await fetch(url, {
