@@ -24,22 +24,22 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div
-      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 bg-neutral-50 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 max-sm:w-auto lg:p-3 dark:border-neutral-800 dark:bg-neutral-950 dark:hover:border-neutral-600'
+      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:hover:border-neutral-600'
       key={name}
     >
-      <div className='text-left'>
-        <h2 className='text-lg text-neutral-950 dark:text-neutral-50'>
+      <div>
+        <h3 className='text-lg text-neutral-950 dark:text-neutral-50'>
           {name}
-        </h2>
-        <div className='max-h-14 overflow-y-auto text-sm text-neutral-700 dark:text-neutral-200'>
-          <p className='mr-1 text-left text-pretty'>
+        </h3>
+        <div className='max-h-14 overflow-y-auto text-sm text-neutral-800 dark:text-neutral-200'>
+          <p className='mr-1 text-pretty'>
             {description || 'No description available'}
           </p>
         </div>
         <div className='mt-2' />
         {homepage ? (
           <a
-            className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
+            className='text-xs text-neutral-500 hover:text-neutral-900 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
             href={homepage}
             rel='noopener noreferrer'
             target='_blank'
@@ -51,7 +51,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             </span>
           </a>
         ) : (
-          <span className='text-gray-400'>Don&apos;t have website</span>
+          <span className='text-neutral-500 dark:text-neutral-900'>
+            Don&apos;t have website
+          </span>
         )}
 
         {/* Es una línea que separa ambos links */}
@@ -59,7 +61,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {html_url ? (
           <a
-            className='text-xs text-neutral-600 hover:text-neutral-950 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
+            className='text-xs text-neutral-500 hover:text-neutral-900 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
             href={html_url}
             rel='noopener noreferrer'
             target='_blank'
@@ -71,13 +73,15 @@ export default function ProjectCard({ project }: { project: Project }) {
             </span>
           </a>
         ) : (
-          <span className='text-gray-400'>Don&apos;t have repo</span>
+          <span className='text-neutral-500 dark:text-neutral-900'>
+            Don&apos;t have repo
+          </span>
         )}
       </div>
       <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5 pr-2'>
         {topics.map((topic) => (
           <li
-            className='rounded-sm border border-neutral-300 bg-neutral-50 px-2 py-1 text-xs shadow-xs transition-all duration-200 dark:border-neutral-700 dark:bg-neutral-950'
+            className='rounded-sm border border-neutral-300 px-2 py-1 text-xs text-neutral-800 shadow-xs transition-all duration-200 dark:border-neutral-700 dark:text-neutral-200'
             key={topic}
           >
             {capitalize(topic)}

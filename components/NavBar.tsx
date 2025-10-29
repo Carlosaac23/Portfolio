@@ -26,7 +26,11 @@ export default function NavBar() {
           suppressHydrationWarning
           variant='ghost'
         >
-          {theme === 'dark' ? <Sun /> : <Moon />}
+          {theme === 'dark' ? (
+            <Sun className='text-neutral-50' />
+          ) : (
+            <Moon className='text-neutral-950' />
+          )}
         </Button>
       </div>
     </header>
