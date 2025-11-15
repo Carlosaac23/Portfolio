@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div
-      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:hover:border-neutral-600'
+      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 hover:shadow-sm max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:shadow-none dark:hover:border-neutral-600'
       key={name}
     >
       <div>
