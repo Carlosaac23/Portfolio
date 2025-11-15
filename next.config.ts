@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     viewTransition: true,
+    typedEnv: true,
   },
-  cacheComponents: true,
 };
 
 export default nextConfig;
