@@ -4,11 +4,12 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistSans } from 'geist/font/sans';
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { ViewTransition } from 'react';
 import './globals.css';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Carlos Acosta',
   description: 'Portfolio personal de proyectos y perfil profesional',
   icons: {
