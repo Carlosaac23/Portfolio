@@ -8,7 +8,7 @@ export default function Links() {
         href='https://x.com/Carlosaac23'
         rel='noopener noreferrer'
         target='_blank'
-        title='A link to my GitHub'
+        title='A link to my X account'
       >
         <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
           X
