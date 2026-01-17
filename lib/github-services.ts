@@ -20,7 +20,7 @@ export default async function getProjects(): Promise<Project[]> {
     }
 
     const data: Project[] = await res.json();
-    return data.filter((repo) => repo.stargazers_count >= 1 && !repo.fork);
+    return data.filter(repo => repo.stargazers_count >= 1 && !repo.fork);
   } catch (error) {
     console.error('Error fetching projects:', error);
     return [];

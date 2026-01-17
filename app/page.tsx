@@ -1,7 +1,8 @@
+import Balancer from 'react-wrap-balancer';
+
 import Links from '@/components/Links';
 import ProjectCard from '@/components/ProjectCard';
 import getProjects from '@/lib/github-services';
-import Balancer from 'react-wrap-balancer';
 
 export default async function HomePage() {
   const projects = await getProjects();
@@ -30,7 +31,7 @@ export default async function HomePage() {
               Projects
             </h2>
             <div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
-              {projects.map((project) => (
+              {projects.map(project => (
                 <ProjectCard key={project.name} project={project} />
               ))}
             </div>

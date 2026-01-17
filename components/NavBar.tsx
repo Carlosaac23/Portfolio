@@ -3,6 +3,7 @@
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
+
 import { Button } from './ui/button';
 
 export default function NavBar() {

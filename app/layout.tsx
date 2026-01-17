@@ -1,13 +1,15 @@
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
-import { ThemeProvider } from '@/components/ThemeProvider';
+import './globals.css';
+
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { ViewTransition } from 'react';
-import './globals.css';
+
+import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Carlos Acosta',
