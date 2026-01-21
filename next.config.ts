@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [new URL('https://github.com/Carlosaac23.png')],
   },
   experimental: {
-    viewTransition: true,
     typedEnv: true,
   },
 };
