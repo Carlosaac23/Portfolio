@@ -5,7 +5,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { ViewTransition } from 'react';
 
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
@@ -46,19 +45,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <ViewTransition>
-        <body
-          className={`${GeistSans.className} bg-neutral-50 transition-all duration-200 dark:bg-neutral-900`}
-        >
-          <ThemeProvider attribute='class' enableSystem>
-            <NavBar />
-            <main>{children}</main>
-            <Analytics />
-            <SpeedInsights />
-            <Footer />
-          </ThemeProvider>
-        </body>
-      </ViewTransition>
+      <body
+        className={`${GeistSans.className} bg-neutral-50 transition-all duration-200 dark:bg-neutral-900`}
+      >
+        <ThemeProvider attribute='class' enableSystem>
+          <NavBar />
+          <main>{children}</main>
+          <Analytics />
+          <SpeedInsights />
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
