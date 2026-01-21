@@ -12,13 +12,6 @@ export interface Project {
   stargazers_count: number;
 }
 
-function capitalize(word: string): string {
-  return word
-    .split('-')
-    .map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-    .join('-');
-}
-
 export default function ProjectCard({ project }: { project: Project }) {
   const { name, html_url, homepage, description, topics } = project;
 
@@ -81,10 +74,10 @@ export default function ProjectCard({ project }: { project: Project }) {
       <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5 pr-2'>
         {topics.map(topic => (
           <li
-            className='rounded-sm border border-neutral-300 px-2 py-1 text-xs text-neutral-800 shadow-xs transition-all duration-200 dark:border-neutral-700 dark:text-neutral-200'
+            className='rounded-sm border border-neutral-300 px-2 py-1 text-xs text-neutral-800 capitalize shadow-xs transition-all duration-200 dark:border-neutral-700 dark:text-neutral-200'
             key={topic}
           >
-            {capitalize(topic)}
+            {topic}
           </li>
         ))}
       </ul>
