@@ -16,6 +16,7 @@ export default function NavBar() {
           alt='Github Profile photo'
           className='rounded-full'
           height={36}
+          priority
           src='https://github.com/Carlosaac23.png'
           width={36}
         />
