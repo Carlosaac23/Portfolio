@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </a>
         ) : (
           <span className='text-neutral-500 dark:text-neutral-400'>
-            Don&apos;t have website
+            No live demo available
           </span>
         )}
 
@@ -62,7 +62,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </a>
         ) : (
           <span className='text-neutral-500 dark:text-neutral-400'>
-            Don&apos;t have repo
+            No live demo available
           </span>
         )}
       </div>
