@@ -16,10 +16,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const { name, html_url, homepage, description, topics } = project;
 
   return (
-    <div
-      className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 hover:shadow-sm max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:shadow-none dark:hover:border-neutral-600'
-      key={name}
-    >
+    <article className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 hover:shadow-sm max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:shadow-none dark:hover:border-neutral-600'>
       <div>
         <h3 className='text-lg text-neutral-950 dark:text-neutral-50'>
           {name}
@@ -29,7 +26,6 @@ export default function ProjectCard({ project }: { project: Project }) {
             {description || 'No description available'}
           </p>
         </div>
-        <div className='mt-2' />
         {homepage ? (
           <a
             className='text-xs text-neutral-500 hover:text-neutral-900 sm:text-sm dark:text-neutral-400 dark:hover:text-neutral-50'
@@ -44,12 +40,11 @@ export default function ProjectCard({ project }: { project: Project }) {
             </span>
           </a>
         ) : (
-          <span className='text-neutral-500 dark:text-neutral-900'>
+          <span className='text-neutral-500 dark:text-neutral-400'>
             Don&apos;t have website
           </span>
         )}
 
-        {/* Es una línea que separa ambos links */}
         <span className='mx-2 text-neutral-600 dark:text-neutral-400'>|</span>
 
         {html_url ? (
@@ -66,7 +61,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </span>
           </a>
         ) : (
-          <span className='text-neutral-500 dark:text-neutral-900'>
+          <span className='text-neutral-500 dark:text-neutral-400'>
             Don&apos;t have repo
           </span>
         )}
@@ -81,6 +76,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 }
