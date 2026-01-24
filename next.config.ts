@@ -2,7 +2,15 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [new URL('https://github.com/Carlosaac23.png')],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/**.png',
+        search: '',
+      },
+    ],
   },
   experimental: {
     typedEnv: true,
