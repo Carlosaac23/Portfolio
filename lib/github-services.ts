@@ -1,8 +1,10 @@
 'use server';
 
+import { cache } from 'react';
+
 import type { Project } from '@/components/ProjectCard';
 
-export default async function getProjects(): Promise<Project[]> {
+const getProjectsImpl = async (): Promise<Project[]> => {
   const url = 'https://api.github.com/users/carlosaac23/repos';
   const { GITHUB_TOKEN } = Bun.env;
 
@@ -25,4 +27,6 @@ export default async function getProjects(): Promise<Project[]> {
     console.error('Error fetching projects:', error);
     return [];
   }
-}
+};
+
+export default cache(getProjectsImpl);
