@@ -1,4 +1,4 @@
-import { SquareArrowOutUpRight } from 'lucide-react';
+import { Mail, SquareArrowOutUpRight } from 'lucide-react';
 
 export default function Links() {
   return (
@@ -10,7 +10,7 @@ export default function Links() {
         target='_blank'
         title='A link to my X account'
       >
-        <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+        <span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
           X
           <SquareArrowOutUpRight size={13} />
         </span>
@@ -23,7 +23,7 @@ export default function Links() {
         target='_blank'
         title='A link to my GitHub'
       >
-        <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+        <span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
           GitHub
           <SquareArrowOutUpRight size={13} />
         </span>
@@ -36,7 +36,7 @@ export default function Links() {
         target='_blank'
         title='A link to my Linkedin'
       >
-        <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+        <span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
           LinkedIn
           <SquareArrowOutUpRight size={13} />
         </span>
@@ -47,9 +47,9 @@ export default function Links() {
         href='mailto:carlosaac232001@gmail.com'
         title='A link to send me an email'
       >
-        <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+        <span className='inline-flex items-center gap-1 hover:underline hover:underline-offset-2'>
           Write me
-          <SquareArrowOutUpRight size={13} />
+          <Mail size={15} />
         </span>
       </a>
     </div>
