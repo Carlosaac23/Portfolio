@@ -1,12 +1,12 @@
 import Balancer from 'react-wrap-balancer';
+import { Suspense } from 'react';
 
 import Links from '@/components/Links';
 import ProjectCard from '@/components/ProjectCard';
+import { ProjectsSkeleton } from '@/components/ProjectsSkeleton';
 import getProjects from '@/lib/github-services';
 
 export default async function HomePage() {
-  const projects = await getProjects();
-
   return (
     <main className='flex flex-col'>
       <h1 className='mb-3 text-2xl font-bold text-neutral-950 dark:text-neutral-50'>
@@ -25,23 +25,35 @@ export default async function HomePage() {
       <Links />
 
       <section className='flex flex-col gap-6'>
-        {projects.length > 0 ? (
-          <>
-            <h2 className='text-xl font-bold tracking-wide text-neutral-950 dark:text-neutral-50'>
-              Projects
-            </h2>
-            <div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
-              {projects.map(project => (
-                <ProjectCard key={project.name} project={project} />
-              ))}
-            </div>
-          </>
-        ) : (
-          <div className='flex flex-col items-center justify-center'>
-            <p className='text-base'>There are no projects</p>
-          </div>
-        )}
+        <Suspense fallback={<ProjectsSkeleton />}>
+          <ProjectsSection />
+        </Suspense>
       </section>
     </main>
+  );
+}
+
+async function ProjectsSection() {
+  const projects = await getProjects();
+
+  return (
+    <>
+      {projects.length > 0 ? (
+        <>
+          <h2 className='text-xl font-bold tracking-wide text-neutral-950 dark:text-neutral-50'>
+            Projects
+          </h2>
+          <div className='grid gap-5 text-sm sm:grid-cols-[1fr_1fr]'>
+            {projects.map(project => (
+              <ProjectCard key={project.name} project={project} />
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className='flex flex-col items-center justify-center'>
+          <p className='text-base'>There are no projects</p>
+        </div>
+      )}
+    </>
   );
 }
