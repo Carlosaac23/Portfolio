@@ -22,14 +22,6 @@ export const metadata: Metadata = {
     description: 'Personal Portfolio',
     url: 'https://portfolio-steel-kappa-78.vercel.app/',
     siteName: 'Carlos Acosta - Portfolio',
-    images: [
-      {
-        url: '/cap.png',
-        width: 1200,
-        height: 630,
-        alt: 'Carlos Acosta - Portfolio',
-      },
-    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -38,13 +30,12 @@ export const metadata: Metadata = {
     title: 'Carlos Acosta - Portfolio',
     description: 'Personal Portfolio',
     creator: '@Carlosaac23',
-    images: ['/cap.png'],
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en'>
       <body
         className={`${GeistSans.className} bg-neutral-50 transition-colors duration-200 dark:bg-neutral-900`}
       >
