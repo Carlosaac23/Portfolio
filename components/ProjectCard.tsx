@@ -1,5 +1,3 @@
-'use client';
-
 import { SquareArrowOutUpRight } from 'lucide-react';
 
 export interface Project {
