@@ -1,14 +1,23 @@
 import type { NextConfig } from 'next';
 
+// Configuration for static generation strategy:
+// - Home page (/) is revalidated every hour (ISR)
+// - GitHub API data is cached and reused across requests
+// - Future routes can use generateStaticParams for pre-rendering
+// - See: https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'github.com',
-        port: '',
         pathname: '/**.png',
-        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        pathname: '/**',
       },
     ],
   },
