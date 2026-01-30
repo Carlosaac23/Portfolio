@@ -14,13 +14,13 @@ export default function ProjectCard({ project }: { project: Project }) {
   const { name, html_url, homepage, description, topics } = project;
 
   return (
-    <article className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-200 hover:border-neutral-400 hover:shadow-sm max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:shadow-none dark:hover:border-neutral-600'>
+    <article className='flex max-h-44 flex-col justify-between rounded-md border border-neutral-300 p-2.5 shadow-xs transition-all duration-100 hover:border-neutral-400 hover:shadow-sm max-sm:w-auto lg:p-3 dark:border-neutral-700 dark:shadow-none dark:hover:border-neutral-600'>
       <div>
         <h3 className='text-lg text-neutral-950 dark:text-neutral-50'>
           {name}
         </h3>
         <div className='max-h-14 overflow-y-auto text-sm text-neutral-800 dark:text-neutral-200'>
-          <p className='mr-1 text-pretty'>
+          <p className='mr-1 mb-1 text-pretty'>
             {description || 'No description available'}
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <ul className='mt-2 flex max-h-8 flex-wrap gap-2 overflow-y-auto py-0.5 pr-2'>
         {topics.map(topic => (
           <li
-            className='rounded-sm border border-neutral-300 px-2 py-1 text-xs text-neutral-800 capitalize shadow-xs transition-all duration-200 dark:border-neutral-700 dark:text-neutral-200'
+            className='rounded-sm border border-neutral-300 px-2 py-1 text-xs text-neutral-800 capitalize shadow-xs transition-all duration-100 dark:border-neutral-700 dark:text-neutral-200'
             key={topic}
           >
             {topic}
