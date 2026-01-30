@@ -6,7 +6,7 @@ import type { Project } from '@/components/ProjectCard';
 
 const getProjectsImpl = async (): Promise<Project[]> => {
   const url = 'https://api.github.com/users/carlosaac23/repos';
-  const { GITHUB_TOKEN } = Bun.env;
+  const { GITHUB_TOKEN } = process.env;
 
   try {
     const res = await fetch(url, {
