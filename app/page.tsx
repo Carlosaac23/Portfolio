@@ -1,5 +1,5 @@
-import Balancer from 'react-wrap-balancer';
 import { Suspense } from 'react';
+import Balancer from 'react-wrap-balancer';
 
 import Links from '@/components/Links';
 import ProjectCard from '@/components/ProjectCard';

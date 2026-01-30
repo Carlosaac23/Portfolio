@@ -15,7 +15,6 @@ This is my personal portfolio website built with Next.js, TypeScript, and Tailwi
 - `app/` - Contains all the pages and layouts for the application.
 - `components/` - Contains all the reusable components.
 - `lib/` - Contains utility functions and services.
-- `public/` - Contains all the static assets.
 
 ## Contact
 
