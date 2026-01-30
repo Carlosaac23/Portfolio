@@ -35,9 +35,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en'>
+    <html className='m-auto max-w-200 p-8' lang='en'>
       <body
-        className={`${GeistSans.className} bg-neutral-50 transition-colors duration-200 dark:bg-neutral-900`}
+        className={`${GeistSans.className} flex min-h-screen flex-col bg-neutral-50 transition-colors duration-100 dark:bg-neutral-900`}
       >
         <ThemeProvider attribute='class' enableSystem>
           <NavBar />
