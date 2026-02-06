@@ -1,3 +1,4 @@
+import { GeistMono } from 'geist/font/mono';
 import { SquareArrowOutUpRight } from 'lucide-react';
 
 export interface Project {
@@ -32,7 +33,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             target='_blank'
             title='A live page link to this project'
           >
-            <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+            <span
+              className={`${GeistMono.className} inline-flex items-center gap-0.5 text-xxs hover:underline hover:underline-offset-2`}
+            >
               {'View website'}
               <SquareArrowOutUpRight size={13} />
             </span>
@@ -53,7 +56,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             target='_blank'
             title='A repository link to this project'
           >
-            <span className='inline-flex items-center gap-0.5 hover:underline hover:underline-offset-2'>
+            <span
+              className={`${GeistMono.className} inline-flex items-center gap-0.5 text-xxs hover:underline hover:underline-offset-2`}
+            >
               {'View on GitHub'}
               <SquareArrowOutUpRight size={13} />
             </span>
